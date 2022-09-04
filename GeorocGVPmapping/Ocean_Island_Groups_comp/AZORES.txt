@@ -1,0 +1,6 @@
+GVP;GEOROC
+Corvo;CORVO
+Furnas;FURNAS
+Sete Cidades;SETE CIDADES
+Flores-Azores;FLORES,FLORES AZORES
+Pico;PICO
