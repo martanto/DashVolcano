@@ -1,0 +1,10 @@
+GVP;GEOROC
+Birk, Harrat al;HARRAT AL BIRK
+Khaybar, Harrat;HARRAT KHAYBAR
+Lunayyir, Harrat;HARRAT LUNAYYIR
+Rahat, Harrat;HARRAT RAHAT
+Bayuda Volcanic Field;BAYUDA DESERT
+Harrat Ash Shamah;HARRAT ASH SHAAM (SHAMAH) VOLCANIC FIELD
+Uwayrid, Harrat;HARRAT AL UWAYRID
+Ithnayn, Harrat;HARRAT ITHNAYN
+Kishb, Harrat;HARRAT AL KISHB
