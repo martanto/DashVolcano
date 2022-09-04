@@ -83,5 +83,29 @@ Adding your own data
 
 **Georoc - GVP mapping files**
 
+The GeorocGVPMapping folder contains a .txt file for each .csv in the GeorocDataset folder. Each file is of the form
+
+>GVP;GEOROC
+
+for example, the file ETNA_SICILY.txt contains
+
+>GVP;GEOROC
+Etna;ETNA
+
+The first column contains names of GVP volcanoes, the second column contains GEOROC names. More precisely, the GVP name is the name that can be found in the column 'Volcano Name' of the GVP_Volcano_List.xlsx, the second column contains names that appear in the LOCATION or LOCATION column of a precompiled file downloaded from GEOROC. It has to be the same name as that found in between two / / for the LOCATION COLUMN, or the first name before the first comma (if any) in the LOCATION COMMENT.
+
+Here is a more complex from the file ANATOLIA-IRAN_BELT_-_CENOZOIC_QUATERNARY.txt.
+
+>Samsari Volcanic Center;SAMSARI CALDERA,SAMSARI VOLCANIC CHAIN
+
+Note there is no space before and after the GVP names, or the GEOROC names.
+
+These mapping files have been compiled algorithmically, with manual checks, but these checks are not exhaustive. There are more than 500 .csv files of data, the longitude and latitude ranges come with different levels of precision, and the location names may not always contain the volcano name itself. It is possible to simply append more GEOROC location names if a mapping file is not complete (and similarly to remove possibly inaccurate data).
+
+
 **Manual Datasets**
+
+It is also possible to add more samples with their rock composition, if the desired samples are not (yet) present in the GEOROC dataset. They need to be in the same format as GEOROC format, and put in the ManualDataset folder. The mapping files need to be updated correspondingly. Examples are found in the ManualDataset folder.
+
+
 
