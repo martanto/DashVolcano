@@ -75,6 +75,7 @@ Running the app
 Once the app is set up, only 2 steps are required. From inside the DashVolcano.1.0 folder, activate the virtual environment and launch the app.
 
 > DashVolcano.1.0$ source venv/bin/activate
+
 > python run.py
 
 Adding your own data
