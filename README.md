@@ -78,6 +78,16 @@ Once the app is set up, only 2 steps are required. From inside the DashVolcano.1
 
 > python run.py
 
+Once the app runs successfully, a message appears in the terminal window, something like
+
+> Dash is running on http://127.0.0.1:8050/
+
+and some statistics are displayd. To lauch the app, write the url
+
+> http://localhost:8050/
+
+in the browser of your choice.
+
 Adding your own data
 --
 
