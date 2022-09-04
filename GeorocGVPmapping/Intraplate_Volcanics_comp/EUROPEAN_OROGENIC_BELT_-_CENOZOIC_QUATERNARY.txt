@@ -1,0 +1,5 @@
+GVP;GEOROC
+Calatrava Volcanic Field;CALATRAVA VOLCANIC PROVINCE
+Olot Volcanic Field;LA GARROTXA - OLOT VOLCANIC DISTRICT
+Chaine des Puys;CHAINE DES PUYS
+West Eifel Volcanic Field;EIFEL
