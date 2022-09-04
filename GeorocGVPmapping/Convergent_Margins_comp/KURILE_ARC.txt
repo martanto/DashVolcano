@@ -1,0 +1,36 @@
+GVP;GEOROC
+Alaid;ALAID
+Ebeko;EBEKO
+Kharimkotan;KHARIMKOTAN
+Toya;NAKAJIMA
+Rishirizan;RISHIRI
+Tokachidake;TOKACHI-DAKE,PENKENAI FLOW
+Taisetsuzan;DAISETSU
+Maruyama;MARUYAMA FORMATION,NIPESOTSU VOLCANIC GROUP,GUNKANYAMA LAVA
+Akan;OAKAN,AKAN,FUREBETSU VOLCANICS
+Kussharo;KUTCHARO,ATOSANUPURI,RISHIRI,NAKAJIMA
+Mashu;MASHU
+Raikoke;RAIKOKE
+Rausudake;RAUSU
+Rasshua;RASSHUA
+Rudakov;RUDAKOV
+Shiretoko-Iozan;SHIRETOKO-IWO-ZAN
+Shirinki;SHIRINKI
+Tomariyama [Golovnin];GOLOVNIN
+Raususan [Mendeleev];MENDELEEV
+Chachadake [Tiatia];TYATYA,TIATIA
+Berutarubesan [Berutarube];BERUTARUBE
+Moekeshiwan [Lvinaya Past];LVINAYA PAST
+Etorofu-Atosanupuri [Atosanupuri];ATOSANUPURI
+Etorofu-Yakeyama [Grozny Group];IVAN GROZNYI
+Odamoisan [Tebenkov];TEBENKOV
+Sashiusudake [Baransky];BARANSKY
+Moyorodake [Medvezhia];KUDRYAVYI (KUDRYAVY)
+Rakkibetsudake [Demon];DEMON
+Chirippusan [Chirip];CHIRPOY (CHERNYYE), BRAT SHIRPOEV (BRAT CHIRPOEV)
+Cherny;CHERNYI
+Ruruidake [Smirnov];RURUI
+Chikurachki;CHIKURACHKI (CHURACHKI)
+Chirinkotan;CHIRINKOTAN (SHIRINKOTAN)
+Ekarma;EKARMA (AEKARMA)
+Karpinsky Group;KARPINSKII(KARPINSKY)

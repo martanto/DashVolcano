@@ -1,0 +1,35 @@
+GVP;GEOROC
+Baluan;BALUAN
+Bam;BAM
+Bamus;BAMUS
+Blup Blup;BLUP BLUP
+Dakataua;DAKATAUA
+Garove;GAROVE
+Kadovar;KADOVAR
+Karkar;KARKAR
+Langila;LANGILA
+Lihir;LIHIR
+Lolo;LOLO
+Lolobau;LOLOBAU
+Manam;MANAM
+Mundua;MUNDUA
+Rabaul;RABAUL,VULCAN,TAVUVUR
+Tavui;TAVUI
+Ulawun;ULAWUN
+Witori;WITORI
+Lamington;LAMINGTON MOUNTAIN
+Victory;MOUNT VICTORY
+Bagana;MOUNT BAGANA
+Takuan Group;TAKUAN
+Ambitle;FENI
+Sulu Range;SULU
+Krummel-Garbuna-Welcker;MOUNT GARBUNA,GARBUNA,MOUNT WELCKER
+Garua Harbour;GARUA
+Ritter Island;RITTER ISLAND
+Umboi;UMBOI
+Long Island;LONG
+Boisa;BOISA (ARIS)
+Balbi;MOUNT BALBI
+Bagana;MOUNT BAGANA
+Dawson Strait Group;DAWSON STRAIT
+Goodenough;GOODENOUGH ISLAND

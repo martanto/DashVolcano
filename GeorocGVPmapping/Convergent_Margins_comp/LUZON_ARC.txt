@@ -1,0 +1,22 @@
+GVP;GEOROC
+Arayat;ARAYAT
+Babuyan Claro;BABUYAN DE CLARO
+Banahaw;BANAHAW
+Bulusan;BULUSAN
+Cagua;CAGUA
+Camiguin;CAMIGUIN,MOUNT CAMIGUIN
+Cuernos de Negros;CUERNOS DE NEGROS
+Iraya;IRAYA
+Iriga;IRIGA
+Isarog;MOUNT ISAROG
+Kanlaon;CANLAON
+Laguna Caldera;LAGUNA DE BAY
+Malindang;MALINDANG
+Mandalagan;MANDALAGAN
+Mariveles;MARIVELES
+Mayon;MAYON
+Natib;NATIB
+Pinatubo;PINATUBO
+San Pablo Volcanic Field;SAN PABLO
+Silay;SILAY
+Taal;TAAL
