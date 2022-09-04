@@ -17,3 +17,7 @@ MyNewFolder, containing the 3 folders (DashVolcano.1.0., GeorocGVPmapping, Georo
 DashVolcano is written in python, you thus need python3 installed on your computer
 (DashVolcano was tested with: Python 3.7.4 on Ubuntu 20.04.4 LTS, and Python 3.8.3 on Mac OS Monterey version 12.5.1). 
 
+It is suggested to set up a python virtual environment, to make sure the dependencies are consistent, and to avoid conflicting with possible other existing python set-ups. To do so, using the command line in a terminal window, go into the folder DashVolcano.1.0:
+> $ cd DashVolcano.1.0.
+and create the virtual environment
+> $ python3 -m venv venv
