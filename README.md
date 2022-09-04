@@ -64,8 +64,9 @@ This data was downloaded from https://volcano.si.edu/ in 2021. GVP data is regul
 
 The folder structure to store GEOROC datasets is provided, but the datasets themselves should be downloaded directly from https://georoc.eu/georoc/new-start.asp, where they are grouped by tectonic settings. 
 
-**Example.** In the folder GeorocDataset, there is a folder named Complex_Volcanic_Settings_comp. It currently contains a single example file, ETNA_SICILY.csv. On the left menu of  https://georoc.eu/georoc/new-start.asp, choose Locations, then Complex Volcanic Settings,then Download complete precompiled dataset. You will obtain 7 files: CENTRAL-NEW_YORK_KIMBERLITES.csv, OAXACA;MEXICO.csv, ETNA_SICILY.csv, POTIGUAR_BASIN.csv, FINGER_LAKES_FIELD_NEW_YORK.csv, USTICA_ISLAND;ITALY.csv, HYBLEAN_OR_IBLEAN_PLATEAU;SICILY.csv. 
- 
+**Example.** In the folder GeorocDataset, there is a folder named Complex_Volcanic_Settings_comp. It currently contains a single example file, ETNA_SICILY.csv. On the left menu of  https://georoc.eu/georoc/new-start.asp, choose Locations, then Complex Volcanic Settings,then Download complete precompiled dataset. You will obtain 7 files: CENTRAL-NEW_YORK_KIMBERLITES.csv, OAXACA_MEXICO.csv, ETNA_SICILY.csv, POTIGUAR_BASIN.csv, FINGER_LAKES_FIELD_NEW_YORK.csv, USTICA_ISLAND_ITALY.csv, HYBLEAN_OR_IBLEAN_PLATEAU_SICILY.csv. Each of these files will have a prefix, that serves as an identifier, and also contains a date, e.g. 2022-06-1VOFM5_ETNA_SICILY.csv. There is no need to change the filename. The app will read the data by ignoring the prefix, and if there are several files, the most recent should be chosen.
+
+**Inclusions.** The file containing inclusions data should also be downloaded from https://georoc.eu/georoc/new-start.asp, on the left menu, choose Inclusions. Note that the current file in the Inclusions_comp folder is not complete, it is an example file that should be replaced. 
 
 
 Running the app
@@ -76,5 +77,10 @@ Once the app is set up, only 2 steps are required. From inside the DashVolcano.1
 > DashVolcano.1.0$ source venv/bin/activate
 > python run.py
 
+Adding your own data
+--
 
+**Georoc - GVP mapping files**
+
+**Manual Datasets**
 
