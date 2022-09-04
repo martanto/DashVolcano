@@ -18,6 +18,63 @@ DashVolcano is written in python, you thus need python3 installed on your comput
 (DashVolcano was tested with: Python 3.7.4 on Ubuntu 20.04.4 LTS, and Python 3.8.3 on Mac OS Monterey version 12.5.1). 
 
 It is suggested to set up a python virtual environment, to make sure the dependencies are consistent, and to avoid conflicting with possible other existing python set-ups. To do so, using the command line in a terminal window, go into the folder DashVolcano.1.0:
+
 > $ cd DashVolcano.1.0.
-and create the virtual environment
+
+and create the virtual environment: 
+
 > $ python3 -m venv venv
+
+If successful, you will see a new folder named venv inside the folder DashVolcano.1.0.
+
+Once the virtual python environment is created (this is done only once), it needs to be activated (this is needed every time the terminal window is opened again):
+
+> DashVolcano.1.0$ source venv/bin/activate
+
+You can tell whether the environment is activated by checking before your computer's name:
+
+> (venv) yourname@yourcomputername: 
+
+To start the app, type the following command:
+
+> python run.py
+
+Some packages are needed to run the app. If a package is missing, the app will not start, instead an error message will appear, giving the name of the package that is not found.
+
+To install a missing package,the synthax is as follows:
+
+> (venv) $ python -m pip install dash==2.0.0
+
+The packages that are likely to be needed are:
+* dash==2.0.0
+* dash-bootstrap-components==1.0.0
+* dash-core-components==2.0.0
+* dash-html-components==2.0.0
+* geopandas==0.10.2
+* numpy==1.20.3
+* openpyxl==3.0.7
+* pandas==1.3.5
+* plotly==5.3.1
+
+Downloading the GVP and GEOROC datasets
+--
+
+The GVP data is provided into two excel files: GVP_Eruption_Results.xlsx, GVP_Volcano_List.xlsx. 
+This data was downloaded from https://volcano.si.edu/ in 2021. GVP data is regularly updated. It is possible to download more recent datasets to update those provided, but the filenames and type (xlsx), as well as their location in the folder structure, have to remain the same. It is also advised to download both volcano and eruption files around the same period, otherwise volcano names may be present in one file and not in the other, which will cause errors when running the app.
+
+The folder structure to store GEOROC datasets is provided, but the datasets themselves should be downloaded directly from https://georoc.eu/georoc/new-start.asp, where they are grouped by tectonic settings. 
+
+**Example.** In the folder GeorocDataset, there is a folder named Complex_Volcanic_Settings_comp. It currently contains a single example file, ETNA_SICILY.csv. On the left menu of  https://georoc.eu/georoc/new-start.asp, choose Locations, then Complex Volcanic Settings,then Download complete precompiled dataset. You will obtain 7 files: CENTRAL-NEW_YORK_KIMBERLITES.csv, OAXACA;MEXICO.csv, ETNA_SICILY.csv, POTIGUAR_BASIN.csv, FINGER_LAKES_FIELD_NEW_YORK.csv, USTICA_ISLAND;ITALY.csv, HYBLEAN_OR_IBLEAN_PLATEAU;SICILY.csv. 
+ 
+
+
+Running the app
+--
+
+Once the app is set up, only 2 steps are required. From inside the DashVolcano.1.0 folder, activate the virtual environment and launch the app.
+
+> DashVolcano.1.0$ source venv/bin/activate
+> python run.py
+
+
+
