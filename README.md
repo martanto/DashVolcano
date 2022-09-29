@@ -1,7 +1,7 @@
 # DashVolcano
 This is a project about volcano data analytics.
 
-DashVolcano is an app, to be downloaded and ran locally.
+DashVolcano is an app, to be downloaded and ran locally on one's computer.
 It create a visual interface, to jointly display volcanic data from two major databases:
 (1) the Geochemistry of Rocks of the Oceans and  Continents (GEOROC, https://georoc.eu/georoc/new-start.asp) of the Digital Geochemistry Infrastructure (DIGIS), and 
 (2) the Volcanoes of the World (VOTW) of the Smithsonian’s Global Volcanism Program (GVP, https://volcano.si.edu/). 
@@ -56,17 +56,35 @@ The packages that are likely to be needed are:
 * pandas==1.3.5
 * plotly==5.3.1
 
+If a message appears to suggest to upgrade pip, whether you do it or not should not impact the app.
+
 Downloading the GVP and GEOROC datasets
 --
 
 The GVP data is provided into two excel files: GVP_Eruption_Results.xlsx, GVP_Volcano_List.xlsx. 
 This data was downloaded from https://volcano.si.edu/ in 2021. GVP data is regularly updated. It is possible to download more recent datasets to update those provided, but the filenames and type (xlsx), as well as their location in the folder structure, have to remain the same. It is also advised to download both volcano and eruption files around the same period, otherwise volcano names may be present in one file and not in the other, which will cause errors when running the app.
 
-The folder structure to store GEOROC datasets is provided, but the datasets themselves should be downloaded directly from https://georoc.eu/georoc/new-start.asp, where they are grouped by tectonic settings. 
+There are two possibilities for the GEOROC dataset:
+** Method 1. ** It is the simplest method. Download directly the whole dataset from <a href = https://researchdata.ntu.edu.sg/dataset.xhtml?persistentId=doi:10.21979/N9/BJENCK> here </a>. 
 
-**Example.** In the folder GeorocDataset, there is a folder named Complex_Volcanic_Settings_comp. It currently contains a single example file, ETNA_SICILY.csv. On the left menu of  https://georoc.eu/georoc/new-start.asp, choose Locations, then Complex Volcanic Settings,then Download complete precompiled dataset. You will obtain 7 files: CENTRAL-NEW_YORK_KIMBERLITES.csv, OAXACA_MEXICO.csv, ETNA_SICILY.csv, POTIGUAR_BASIN.csv, FINGER_LAKES_FIELD_NEW_YORK.csv, USTICA_ISLAND_ITALY.csv, HYBLEAN_OR_IBLEAN_PLATEAU_SICILY.csv. Each of these files will have a prefix, that serves as an identifier, and also contains a date, e.g. 2022-06-1VOFM5_ETNA_SICILY.csv. There is no need to change the filename. The app will read the data by ignoring the prefix, and if there are several files, the most recent should be chosen.
+** Method 2. **
+The folder structure to store GEOROC datasets is provided, but the datasets themselves should be downloaded directly from https://georoc.eu/georoc/new-start.asp, where they are grouped by tectonic settings.
 
-**Inclusions.** The file containing inclusions data should also be downloaded from https://georoc.eu/georoc/new-start.asp, on the left menu, choose Inclusions. Note that the current file in the Inclusions_comp folder is not complete, it is an example file that should be replaced. 
+**Example (method 2).** In the folder GeorocDataset, there is a folder named Complex_Volcanic_Settings_comp. It currently contains a single example file, ETNA_SICILY.csv. On the left menu of  https://georoc.eu/georoc/new-start.asp, choose Locations, then Complex Volcanic Settings,then Download complete precompiled dataset. You will obtain 7 files: CENTRAL-NEW_YORK_KIMBERLITES.csv, OAXACA_MEXICO.csv, ETNA_SICILY.csv, POTIGUAR_BASIN.csv, FINGER_LAKES_FIELD_NEW_YORK.csv, USTICA_ISLAND_ITALY.csv, HYBLEAN_OR_IBLEAN_PLATEAU_SICILY.csv. Each of these files will have a prefix, that serves as an identifier, and also contains a date, e.g. 2022-06-1VOFM5_ETNA_SICILY.csv. There is no need to change the filename. The app will read the data by ignoring the prefix, and if there are several files, the most recent should be chosen.
+
+**Inclusions (for method 2).** The file containing inclusions data should also be downloaded from https://georoc.eu/georoc/new-start.asp, on the left menu, choose Inclusions. Note that the current file in the Inclusions_comp folder is not complete, it is an example file that should be replaced. 
+
+** End result. **
+Whether you choose the first method (to get data from 2021) or the second (to get the most recent data), the final folder structure will be: 
+<br>
+&nbsp;├ MyNewFolder <br>
+ &nbsp; &nbsp; GVP_Volcano_List.xlsx <br>
+ &nbsp; &nbsp; GVP_Eruption_Results.xlsx <br>
+ &nbsp;    ├ DashVolcano.1.0. <br>
+ &nbsp;    ├ GeorocGVPmapping <br> 
+ &nbsp;    ├ GeorocDataset <br>
+<br>
+and the folder GeorocDataset itself will contains 14 folders and 1 .csv file.
 
 
 Running the app
