@@ -85,7 +85,7 @@ Whether you choose the first method (to get data from 2021) or the second (to ge
  &nbsp;    ├ GeorocGVPmapping <br> 
  &nbsp;    ├ GeorocDataset <br>
 <br>
-and the folder GeorocDataset itself will contains 13 folders (12 folders from GEOROC + 1 folder called ManualDataset) and 1 .csv file called GEOROCaroundGVP.csv.
+and the folder GeorocDataset itself will contains 13 folders (12 folders from GEOROC + 1 folder called ManualDataset) and 1 .csv file called GEOROCaroundGVP.csv. The file GEOROCaroundGVP.csv contains the GEOROC locations which are geographically relevant to GVP volcanoes.
 
 
 Running the app
