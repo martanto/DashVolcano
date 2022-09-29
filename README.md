@@ -35,7 +35,7 @@ You can tell whether the environment is activated by checking before your comput
 
 > (venv) yourname@yourcomputername: 
 
-To start the app, type the following command:
+To start the app, type the following command (you need the data to be available before you use the app for the first time, see below, Downloading the GVP and GEOROC datasets):
 
 > python run.py
 
