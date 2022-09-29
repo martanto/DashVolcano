@@ -65,7 +65,7 @@ The GVP data is provided into two excel files: GVP_Eruption_Results.xlsx, GVP_Vo
 This data was downloaded from https://volcano.si.edu/ in 2021. GVP data is regularly updated. It is possible to download more recent datasets to update those provided, but the filenames and type (xlsx), as well as their location in the folder structure, have to remain the same. It is also advised to download both volcano and eruption files around the same period, otherwise volcano names may be present in one file and not in the other, which will cause errors when running the app.
 
 There are two possibilities for the GEOROC dataset:
-** Method 1. ** It is the simplest method. Download directly the whole dataset from <a href = https://researchdata.ntu.edu.sg/dataset.xhtml?persistentId=doi:10.21979/N9/BJENCK> here </a>. 
+** Method 1. ** It is the simplest method. Download directly the whole dataset from <a href = https://doi.org/10.21979/N9/BJENCK> here </a>. 
 
 ** Method 2. **
 The folder structure to store GEOROC datasets is provided, but the datasets themselves should be downloaded directly from https://georoc.eu/georoc/new-start.asp, where they are grouped by tectonic settings.
@@ -100,7 +100,22 @@ Once the app runs successfully, a message appears in the terminal window, someth
 
 > Dash is running on http://127.0.0.1:8050/
 
-and some statistics are displayd. To lauch the app, write the url
+and some statistics are displayed, e.g., (the actual numbers may vary, depending on the dates at which the data was downloaded):
+
+#####################################
+#                                   #
+# Basic Statistics                  #
+#                                   #
+#####################################
+Number of GVP volcanoes:  1416
+Number of GVP eruptions (confirmed):  9855
+Number of volcanoes with known eruption(s):  861
+Number of GEOROC volcanoes:  906
+Number of GEOROC volcanoes with eruption data:  649
+
+
+
+To lauch the app, write the url
 
 > http://localhost:8050/
 
