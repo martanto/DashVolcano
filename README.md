@@ -41,7 +41,7 @@ To start the app, type the following command (you need the data to be available 
 
 Some packages are needed to run the app. If a package is missing, the app will not start, instead an error message will appear, giving the name of the package that is not found.
 
-To install a missing package,the synthax is as follows (this is an example for the package dash, version 2.0.0):
+To install a missing package,the synthax is as follows (this is an example for the package dash, version 2.0.0, please adjust the name depending on the package which is missing):
 
 > (venv) $ python -m pip install dash==2.0.0
 
