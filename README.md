@@ -140,7 +140,7 @@ Here is a more complex from the file ANATOLIA-IRAN_BELT_-_CENOZOIC_QUATERNARY.tx
 
 Note there is no space before and after the GVP names, or the GEOROC names.
 
-These mapping files have been compiled algorithmically, with manual checks, but these checks are not exhaustive. There are more than 500 .csv files of data, the longitude and latitude ranges come with different levels of precision, and the location names may not always contain the volcano name itself. It is possible to simply append more GEOROC location names if a mapping file is not complete (and similarly to remove possibly inaccurate data).
+These mapping files have been compiled algorithmically, with manual checks, but these checks are not exhaustive. There are more than 480 .csv files of data, the longitude and latitude ranges come with different levels of precision, and the location names may not always contain the volcano name itself. It is possible to simply append more GEOROC location names if a mapping file is not complete (and similarly to remove possibly inaccurate data).
 
 
 **Manual Datasets**
