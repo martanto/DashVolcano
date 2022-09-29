@@ -103,16 +103,12 @@ Once the app runs successfully, a message appears in the terminal window, someth
 
 and some statistics are displayed, e.g., (the actual numbers may vary, depending on the dates at which the data was downloaded):
 
-#####################################
-#                                   #
-# Basic Statistics                  #
-#                                   #
-#####################################
-Number of GVP volcanoes:  1416
-Number of GVP eruptions (confirmed):  9855
-Number of volcanoes with known eruption(s):  861
-Number of GEOROC volcanoes:  906
-Number of GEOROC volcanoes with eruption data:  649
+Basic Statistics <br>
+Number of GVP volcanoes:  1416 <br>
+Number of GVP eruptions (confirmed):  9855 <br>
+Number of volcanoes with known eruption(s):  861 <br>
+Number of GEOROC volcanoes:  906 <br>
+Number of GEOROC volcanoes with eruption data:  649 <br>
 
 
 
