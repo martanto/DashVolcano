@@ -61,7 +61,7 @@ If a message appears to suggest to upgrade pip, whether you do it or not should 
 Downloading the GVP and GEOROC datasets
 --
 
-The GVP data is provided into two excel files: GVP_Eruption_Results.xlsx, GVP_Volcano_List.xlsx. 
+The GVP data is provided into two excel files: GVP_Eruption_Results.xlsx, GVP_Volcano_List.xlsx. There is no need to download further data. 
 This data was downloaded from https://volcano.si.edu/ in 2021. GVP data is regularly updated. It is possible to download more recent datasets to update those provided, but the filenames and type (xlsx), as well as their location in the folder structure, have to remain the same. It is also advised to download both volcano and eruption files around the same period, otherwise volcano names may be present in one file and not in the other, which will cause errors when running the app.
 
 There are two possibilities for the GEOROC dataset:
