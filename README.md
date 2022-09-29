@@ -1,5 +1,5 @@
 # DashVolcano
-This is a project about volcano data analytics.
+This is a project about volcano data analytics, done in collaboration with the Earth Observatory of Singapore (see also <a href= https://researchdata.ntu.edu.sg/dataverse/dashvolcano> here </a>).
 
 DashVolcano is an app, to be downloaded and ran locally on one's computer.
 It create a visual interface, to jointly display volcanic data from two major databases:
