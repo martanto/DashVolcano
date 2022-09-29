@@ -75,7 +75,7 @@ The folder structure to store GEOROC datasets is provided, but the datasets them
 
 **Inclusions (for method 2).** The file containing inclusions data should also be downloaded from https://georoc.eu/georoc/new-start.asp, on the left menu, choose Inclusions. Note that the current file in the Inclusions_comp folder is not complete, it is an example file that should be replaced. 
 
-** End result. **
+**End result.**
 Whether you choose the first method (to get data from 2021) or the second (to get the most recent data), the final folder structure will be: 
 <br>
 &nbsp;├ MyNewFolder <br>
