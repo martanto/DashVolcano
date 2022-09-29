@@ -85,7 +85,7 @@ Whether you choose the first method (to get data from 2021) or the second (to ge
  &nbsp;    ├ GeorocGVPmapping <br> 
  &nbsp;    ├ GeorocDataset <br>
 <br>
-and the folder GeorocDataset itself will contains 14 folders and 1 .csv file.
+and the folder GeorocDataset itself will contains 14 folders (13 folders from GEOROC + 1 folder called ManualDataset) and 1 .csv file called GEOROCaroundGVP.csv.
 
 
 Running the app
