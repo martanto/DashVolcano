@@ -65,9 +65,10 @@ The GVP data is provided into two excel files: GVP_Eruption_Results.xlsx, GVP_Vo
 This data was downloaded from https://volcano.si.edu/ in 2021. GVP data is regularly updated. It is possible to download more recent datasets to update those provided, but the filenames and type (xlsx), as well as their location in the folder structure, have to remain the same. It is also advised to download both volcano and eruption files around the same period, otherwise volcano names may be present in one file and not in the other, which will cause errors when running the app.
 
 There are two possibilities for the GEOROC dataset:
-** Method 1. ** It is the simplest method. Download directly the whole dataset from <a href = https://doi.org/10.21979/N9/BJENCK> here </a>. 
 
-** Method 2. **
+**Method 1.** It is the simplest method. Download directly the whole dataset from <a href = https://doi.org/10.21979/N9/BJENCK> here </a>. 
+
+**Method 2.**
 The folder structure to store GEOROC datasets is provided, but the datasets themselves should be downloaded directly from https://georoc.eu/georoc/new-start.asp, where they are grouped by tectonic settings.
 
 **Example (method 2).** In the folder GeorocDataset, there is a folder named Complex_Volcanic_Settings_comp. It currently contains a single example file, ETNA_SICILY.csv. On the left menu of  https://georoc.eu/georoc/new-start.asp, choose Locations, then Complex Volcanic Settings,then Download complete precompiled dataset. You will obtain 7 files: CENTRAL-NEW_YORK_KIMBERLITES.csv, OAXACA_MEXICO.csv, ETNA_SICILY.csv, POTIGUAR_BASIN.csv, FINGER_LAKES_FIELD_NEW_YORK.csv, USTICA_ISLAND_ITALY.csv, HYBLEAN_OR_IBLEAN_PLATEAU_SICILY.csv. Each of these files will have a prefix, that serves as an identifier, and also contains a date, e.g. 2022-06-1VOFM5_ETNA_SICILY.csv. There is no need to change the filename. The app will read the data by ignoring the prefix, and if there are several files, the most recent should be chosen.
