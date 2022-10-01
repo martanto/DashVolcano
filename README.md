@@ -53,7 +53,6 @@ This set-up was tested with Windows 10 and python 3.10.7.
 Then you can type quit, all set, python is installed.
 
 > quit()
-> C:\Users\yourusername>
 
 If python is not installed, you need to install it, e.g. you can download the windows installer from  www.python.org. Once you have downloaded the installer and you open it, you will have options for the installation. It is suggested to tick both boxes ("Install launchers for all users" and "Add Python to PATH") and to go for the customize option "Customize installation". Have all the Optional Features ticked, for the Advanced Options, tick (at least) "Install for all users", "Associates files with Python", "Create shortcuts for installed applications", "Add Python to environment variables". Please **pay attention** to where Python is installed, it should look like
 
