@@ -70,7 +70,7 @@ To install virtualenv through pip, in the command prompt, type pip install virtu
 
 You are likely to see a warning of the kind:
 WARNING: The script virtualenv.exe is installed in 'C:\Users\yourusername\AppData\Roaming\Python\Python310\Scripts' which is not on PATH.
-This is not a problem, however please pay attention to the path indicated in this message.
+This is not a problem, however please **pay attention** to the path indicated in this message.
 
 Then using the command prompt, go into the folder DashVolcano.1.0:
 
