@@ -48,6 +48,7 @@ This set-up was tested with Windows 10 and python 3.10.7.
 **Install Python.** Open a command prompt (next to the windows start icon, search for "command prompt" and click on the command prompt icon). Type python. If python is installed, you will see something like that:
 
 > C:\Users\yourusername>python
+
 > Python 3.10.7
 
 Then you can type quit, all set, python is installed.
@@ -155,11 +156,13 @@ Once the app is set up, only 2 steps are required. From inside the DashVolcano.1
 For Mac OS and Linux:
 
 > DashVolcano.1.0$ source venv/bin/activate
+
 > DashVolcano.1.0$ python run.py
 
 For Windows 10:
 
 > C:\Users\yourusername\DashVolcano.1.0.>.venv\Scripts\activate
+
 > C:\Users\yourusername\DashVolcano.1.0.> python run.py
 
 Once the app runs successfully, a message appears in the terminal window, something like
