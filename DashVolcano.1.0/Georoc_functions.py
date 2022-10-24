@@ -640,7 +640,7 @@ def plot_chem(thisfig, thisdf, chem1, theselbls):
         if 'VEI' in list(thisdf):
             thiscustomdata = thismat[chem1[1]].astype(str)+' '+chem1[1]+' '+thismat['MATERIAL']+' VEI='+thismat['VEI']
         else:
-            thiscustomdata = thisdf[chem1[1]].astype(str)+' '+chem1[1]
+            thiscustomdata = thismat[chem1[1]].astype(str)+' '+chem1[1]
         
         # plots
         thisfig.add_trace(
