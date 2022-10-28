@@ -27,10 +27,13 @@ Odamoisan [Tebenkov];TEBENKOV
 Sashiusudake [Baransky];BARANSKY
 Moyorodake [Medvezhia];KUDRYAVYI (KUDRYAVY)
 Rakkibetsudake [Demon];DEMON
-Chirippusan [Chirip];CHIRPOY (CHERNYYE), BRAT SHIRPOEV (BRAT CHIRPOEV)
+Chirpoi;CHIRPOY (CHERNYYE), BRAT SHIRPOEV (BRAT CHIRPOEV)
 Cherny;CHERNYI
 Ruruidake [Smirnov];RURUI
 Chikurachki;CHIKURACHKI (CHURACHKI)
 Chirinkotan;CHIRINKOTAN (SHIRINKOTAN)
 Ekarma;EKARMA (AEKARMA)
 Karpinsky Group;KARPINSKII(KARPINSKY)
+Zavaritzki Caldera;ZAVARITSKII
+Nemo Peak;NEMO
+Ushishur;USHISHIR

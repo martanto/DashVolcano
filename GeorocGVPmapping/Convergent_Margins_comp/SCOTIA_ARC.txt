@@ -8,3 +8,10 @@ Melville;MELVILLE PEAK
 Hodson;MOUNT HODSON
 Paulet;PAULET ISLAND
 Seal Nunataks Group;SEAL NUNATAKS
+Deception Island;DECEPTION
+Hodson;MOUNT HODSON,VISOKOI
+Leskov Island;LESKOV
+Candlemas Island;CANDLEMAS,VINDICATION
+Montagu Island;MONTAGU
+Bristol Island;BRISTOL,FREEZLAND
+Southern Thule;THULE,COOK
