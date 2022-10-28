@@ -10,7 +10,7 @@ Ararat;ARARAT
 Tenduruk Dagı;TENDUREK
 Acigol-Nevsehir;ACIGÖL
 Erciyes Dagi;ERCIYES
-Kula;KULA
+Kula;KULA,KULA VOLCANIC FIELD
 Karapinar Field;KARAPINAR
 Hasan Dagi;HASANDAG
 Karaca Dag;KARACA(LI)DAG
