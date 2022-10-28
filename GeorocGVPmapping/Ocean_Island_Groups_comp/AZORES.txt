@@ -1,6 +1,13 @@
 GVP;GEOROC
-Corvo;CORVO
 Furnas;FURNAS
+Agua de Pau;AGUA DE PAO
+Picos Volcanic System;SAO MIGUEL
 Sete Cidades;SETE CIDADES
-Flores-Azores;FLORES,FLORES AZORES
+Don Joao de Castro Bank;D. JOAO CASTRO BANK
+Terceira;TERCEIRA
+Graciosa;GRACIOSA
+San Jorge;SAO JORGE
 Pico;PICO
+Fayal;FAIAL
+Corvo;CORVO
+Flores-Azores;FLORES,FLORES AZORES
