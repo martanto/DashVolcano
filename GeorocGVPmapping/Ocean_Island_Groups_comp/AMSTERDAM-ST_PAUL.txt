@@ -1,1 +1,3 @@
 GVP;GEOROC
+St. Paul;ST. PAUL ISLAND
+Amsterdam Island;AMSTERDAM ISLAND

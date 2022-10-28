@@ -1,1 +1,2 @@
 GVP;GEOROC
+Prince Edward Island;PRINCE EDWARD ISLANDS

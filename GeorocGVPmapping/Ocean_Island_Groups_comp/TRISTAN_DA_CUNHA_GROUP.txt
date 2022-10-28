@@ -1,1 +1,3 @@
 GVP;GEOROC
+Tristan da Cunha;TRISTAN DA CUNHA
+Nightingale Island;NIGHTINGALE

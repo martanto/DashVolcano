@@ -1,1 +1,4 @@
 GVP;GEOROC
+Buckle Island;BUCKLE ISLAND
+Young Island;YOUNG ISLAND
+Sturge Island;STURGE

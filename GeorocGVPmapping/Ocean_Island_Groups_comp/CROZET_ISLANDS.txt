@@ -1,1 +1,4 @@
 GVP;GEOROC
+Est, Ile de l';ILE DE L^EST
+Possession, Ile de la;ILE DE LA POSSESSION
+Cochons, Ile aux;ILE AUX COCHON (HOG ISLAND)
