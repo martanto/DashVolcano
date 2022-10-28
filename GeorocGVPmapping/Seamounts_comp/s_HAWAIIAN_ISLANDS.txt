@@ -1,1 +1,2 @@
 GVP;GEOROC
+Loihi;LOIHI
