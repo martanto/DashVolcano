@@ -1,2 +1,4 @@
 GVP;GEOROC
 Tahalra Volcanic Field;TAHALGHA (TAHALRA) VOLCANIC FIELD
+Atakor Volcanic Field;ATAKOR VOLCANIC FIELD
+Manzaz Volcanic Field;MANZAZ VOLCANIC FIELD
