@@ -1,2 +1,4 @@
 GVP;GEOROC
 Kuwae;KUWAE,KARUA
+Epi;EPI G,EPI B,EPI C,EPI A
+Eastern Gemini Seamount;EASTERN GEMINI

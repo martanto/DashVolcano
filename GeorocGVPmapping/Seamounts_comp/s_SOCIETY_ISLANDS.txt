@@ -1,1 +1,5 @@
 GVP;GEOROC
+Teahitia;TEAHITIA
+Rocard;ROCARD
+Moua Pihaa;MOUA PIHAA
+Mehetia;MEHETIA

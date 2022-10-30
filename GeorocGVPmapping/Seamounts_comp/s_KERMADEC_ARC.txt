@@ -1,2 +1,12 @@
 GVP;GEOROC
+Clark;CLARK
+Tangaroa;TANGAROA
+Rumble V;RUMBLE V
+Rumble IV;RUMBLE IV
+Rumble III;RUMBLE III
+Rumble II West;RUMBLE II (WEST)
+Healy;HEALY
+Brothers;BROTHERS
+Havre Seamount;HAVRE
 Macauley;MACAULEY
+Giggenbach;GIGGENBACH
