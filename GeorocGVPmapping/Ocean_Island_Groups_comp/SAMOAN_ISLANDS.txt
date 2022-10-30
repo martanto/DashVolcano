@@ -1,1 +1,6 @@
 GVP;GEOROC
+Savai'i;SAVAI^I
+Upolu;UPOLU
+Tutuila;TUTUILA
+Ta'u;TAU ISLAND
+Ofu-Olosega;OFU
