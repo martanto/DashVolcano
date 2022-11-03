@@ -13,4 +13,3 @@ Wallis Islands;WALLIS (UVEA) ISLANDS
 Taveuni;TAVEUNI
 Koro;KORO
 Nabukelevu;NAKOBALEVU
-Ata;ATA
