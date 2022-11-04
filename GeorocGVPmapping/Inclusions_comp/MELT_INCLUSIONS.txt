@@ -142,7 +142,7 @@ Gran Canaria;GRAN CANARIA
 Granada;GRANADA
 Grille, La;LA GRILLE
 Grimsnes;GRIMSNES
-Grimsvotn;GRIMSV√ñTN 
+Grimsvotn;GRIMSVÖTN
 Guadalupe;RIO PUERCO VOLCANIC FIELD - CERRO DE GUADALUPE
 Guguan;GUGUAN
 Hainan Volcanic Field;HAINAN ISLAND
