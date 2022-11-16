@@ -1,2 +1,1 @@
 GVP;GEOROC
-Pico;PICO

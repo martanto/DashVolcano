@@ -1,9 +1,9 @@
 GVP;GEOROC
-Myojinsho;HAROSU
-Kaikata Seamount;KAIKATA
+Izu-Torishima;TORISHIMA
+Kaikata Seamount; KAIKATA
+Kurose Hole;KUROSE HOLE
+Kita-Bayonnaise;KITA-BAYONNAISE (MYOJIN KNOLL)
 Kaitoku Seamount;KAITOKU
-Kita-Bayonnaise;BAYONNAISED KNOLL, KITA-BAYONNAISE (MYOJIN KNOLL)
-Kurose Hole;DAINI-NISHIKUROSE KNOLL
-Mokuyo Seamount;MOKUYO
-Suiyo Seamount;SUIYO
 Doyo Seamount;DOYO
+Suiyo Seamount;SUIYO
+Mokuyo Seamount;MOKUYO
