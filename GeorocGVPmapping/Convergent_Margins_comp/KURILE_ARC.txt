@@ -1,39 +1,47 @@
 GVP;GEOROC
+Akan;AKAN,ME-AKAN-DAKE,OAKAN
 Alaid;ALAID
-Ebeko;EBEKO
-Kharimkotan;KHARIMKOTAN
-Toya;NAKAJIMA
-Rishirizan;RISHIRI
-Tokachidake;TOKACHI-DAKE,PENKENAI FLOW
-Taisetsuzan;DAISETSU
-Maruyama;MARUYAMA FORMATION,NIPESOTSU VOLCANIC GROUP,GUNKANYAMA LAVA
-Akan;OAKAN,AKAN,FUREBETSU VOLCANICS
-Kussharo;KUTCHARO,ATOSANUPURI,RISHIRI,NAKAJIMA
-Mashu;MASHU
-Raikoke;RAIKOKE
-Rausudake;RAUSU
-Rasshua;RASSHUA
-Rudakov;RUDAKOV
-Shiretoko-Iozan;SHIRETOKO-IWO-ZAN
-Shirinki;SHIRINKI
-Tomariyama [Golovnin];GOLOVNIN
-Raususan [Mendeleev];MENDELEEV
-Chachadake [Tiatia];TYATYA,TIATIA
 Berutarubesan [Berutarube];BERUTARUBE
-Moekeshiwan [Lvinaya Past];LVINAYA PAST
-Etorofu-Atosanupuri [Atosanupuri];ATOSANUPURI
-Etorofu-Yakeyama [Grozny Group];IVAN GROZNYI
-Odamoisan [Tebenkov];TEBENKOV
-Sashiusudake [Baransky];BARANSKY
-Moyorodake [Medvezhia];KUDRYAVYI (KUDRYAVY)
-Rakkibetsudake [Demon];DEMON
-Chirpoi;CHIRPOY (CHERNYYE), BRAT SHIRPOEV (BRAT CHIRPOEV)
+Chachadake [Tiatia];TIATIA,TYATYA
 Cherny;CHERNYI
-Ruruidake [Smirnov];RURUI
 Chikurachki;CHIKURACHKI (CHURACHKI)
 Chirinkotan;CHIRINKOTAN (SHIRINKOTAN)
+Chirippusan [Chirip];CHIRIP MASSIF
+Chirpoi;BRAT SHIRPOEV (BRAT CHIRPOEV),CHIRPOY (CHERNYYE)
+Ebeko;EBEKO
 Ekarma;EKARMA (AEKARMA)
+Etorofu-Atosanupuri [Atosanupuri];ATOSANUPURI
+Etorofu-Yakeyama [Grozny Group];IVAN GROZNYI
+Fuss Peak;FUSS
 Karpinsky Group;KARPINSKII(KARPINSKY)
-Zavaritzki Caldera;ZAVARITSKII
+Ketoi;KETOI (PALLASA)
+Kharimkotan;KHARIMKOTAN
+Kussharo;KUSSHARO
+Mashu;MASHU
+Milna;MILNE (MILNA)
+Moekeshiwan [Lvinaya Past];LVINAYA PAST
+Moyorodake [Medvezhia];KUDRYAVYI (KUDRYAVY)
 Nemo Peak;NEMO
+Odamoisan [Tebenkov];TEBENKOV
+Prevo Peak;PREVOST (PREVO)
+Raikoke;RAIKOKE
+Rakkibetsudake [Demon];DEMON
+Rasshua;RASSHUA
+Rausudake;RAUSU
+Raususan [Mendeleev];MENDELEEV
+Rishirizan;RISHIRI
+Rudakov; RUDAKOV
+Ruruidake [Smirnov];RURUI
+Sarychev Peak;SARYCHEV,MATUA
+Sashiusudake [Baransky];BARANSKY
+Shiretoko-Iozan;SHIRETOKO-IWO-ZAN
+Shirinki;SHIRINKI
+Sinarka;SINARKO
+Taisetsuzan;TAISETSU
+Tao-Rusyr Caldera;TAO-RUSYR
+Tokachidake;TOKACHI FLOW,TOKACHI-DAKE
+Tomariyama [Golovnin];GOLOVNIN
+Uratman;URAT(A)MAN
 Ushishur;USHISHIR
+Vernadskii Ridge;VERNADSKII
+Zavaritzki Caldera;ZAVARITSKII
