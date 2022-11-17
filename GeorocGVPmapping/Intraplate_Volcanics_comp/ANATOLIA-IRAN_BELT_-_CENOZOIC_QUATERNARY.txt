@@ -7,7 +7,7 @@ Ghegham Volcanic Ridge;GEGHAMA NEOVOLCANIC AREA
 Nemrut Dagi;NEMRUT
 Porak;POROK
 Ararat;ARARAT
-Tenduruk Dagı;TENDUREK
+Tenduruk Dagi;TENDUREK
 Acigol-Nevsehir;ACIGÖL
 Erciyes Dagi;ERCIYES
 Kula;KULA,KULA VOLCANIC FIELD
