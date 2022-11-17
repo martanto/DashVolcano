@@ -28,7 +28,7 @@ Krakatau;KRAKATAU
 Lamongan;LAMONGAN
 Lawu;LAWU
 Lewotobi;LEWOTOBI
-Lewotolok;LEWOTOLO (SELAT BOLENG)
+Lewotolo;LEWOTOLO (SELAT BOLENG)
 Marapi;MARAPI
 Merapi;MERAPI
 Merbabu;MERBABU
