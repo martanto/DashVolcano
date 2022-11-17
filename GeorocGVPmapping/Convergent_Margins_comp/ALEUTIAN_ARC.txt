@@ -2,7 +2,7 @@ GVP;GEOROC
 Akutan;AKUTAN
 Amak;AMAK
 Aniakchak;ANIAKCHAK
-Atka Volcanic Complex;ATKA,KOROVIN
+Atka;ATKA,KOROVIN
 Augustine;AUGUSTINE
 Bobrof;BOBROF
 Bogoslof;BOGOSLOF
