@@ -140,9 +140,6 @@ def load_georoc(thisvolcano):
     else:
         dfloaded.loc[:, 'LOCATION-4'] = ' ' + thisvolcano
 
-    # adds names to rocks whose name was not given
-    dfloaded = guess_rock(dfloaded)
-    
     # adds dates from LOCATION COMMENT
     # finds the dates
     dfloaded['GUESSED DATE'] = dfloaded['LOCATION COMMENT'].astype(str).fillna('').apply(extract_date)
@@ -151,6 +148,9 @@ def load_georoc(thisvolcano):
     
     # add normalization 
     dfloaded = with_feonorm(dfloaded)
+    
+    # adds names to rocks whose name was not given
+    dfloaded = guess_rock(dfloaded)
     
     return dfloaded
 
