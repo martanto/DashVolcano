@@ -110,11 +110,13 @@ The packages that are likely to be needed are:
 * dash-bootstrap-components==1.0.0
 * dash-core-components==2.0.0
 * dash-html-components==2.0.0
+* flask ==2.0.0
 * geopandas==0.10.2
 * numpy==1.20.3
 * openpyxl==3.0.7
 * pandas==1.3.5
 * plotly==5.3.1
+* werkzeug==2.0.1
 
 If a message appears to suggest to upgrade pip, whether you do it or not should not impact the app.
 
