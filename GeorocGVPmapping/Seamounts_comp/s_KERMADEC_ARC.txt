@@ -7,6 +7,6 @@ Rumble III;RUMBLE III
 Rumble II West;RUMBLE II (WEST)
 Healy;HEALY
 Brothers;BROTHERS
-Havre Seamount;HAVRE
+Havre Seamount;HAVRE,HAVRE TROUGH
 Macauley;MACAULEY
 Giggenbach;GIGGENBACH
