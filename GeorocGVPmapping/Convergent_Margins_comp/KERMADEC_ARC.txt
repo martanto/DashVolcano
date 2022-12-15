@@ -1,5 +1,5 @@
 GVP;GEOROC
 Macauley;MACAULEY
 Raoul Island;RAOUL
-Havre Seamount;HAVRE TROUGH
+Havre Seamount;HAVRE,HAVRE TROUGH
 Curtis Island;CURTIS
