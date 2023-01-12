@@ -9,10 +9,14 @@ It creates a visual interface, to jointly display volcanic data from two major d
 Set-up and Directory structure
 --
 
-To install DashVolcano on your computer, the 3 folders and 2 excel files should be downloaded into one local folder, let us call it MyNewFolder. 
+To install DashVolcano on your computer, the 3 folders and 2 excel files should be downloaded into a folder on your computer. It is preferrable to create a new folder (wherever you want this new folder to be), let us call it MyNewFolder, inside which you will place the downloaded folders DashVolcano.1.0., GeorocGVPmapping, GeorocDataset and the downloaded files GVP_Eruption_Results.xlsx, GVP_Volcano_List.xlsx.
+
 The resulting directory structure will thus be: 
 
 MyNewFolder, containing the 3 folders (DashVolcano.1.0., GeorocGVPmapping, GeorocDataset) and the 2 excel files (GVP_Eruption_Results.xlsx, GVP_Volcano_List.xlsx).
+
+**Example** A new folder was created inside Documents, called Volcanos, inside which the 3 folders and the two files are found.
+![Screenshot](screenshots/ss1.png)
 
 DashVolcano is written in python, you thus need python3 installed on your computer (this should be the case for Mac OS and Linux, instructions are provided for Windows 10 below). 
 DashVolcano was tested with: Python 3.7.4 on Ubuntu 20.04.4 LTS, and Python 3.8.3 on Mac OS Monterey version 12.5.1. 
