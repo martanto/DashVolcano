@@ -42,7 +42,7 @@ Create the virtual environment:
 
 If successful, you will see a new folder named venv inside the folder DashVolcano.1.0:
 
-**Example** Checking that venv was created using the terminal window.
+**Example** Checking that venv was created using the terminal window, using the command ls.
 ![Screenshot](screenshots/ss3.png)
 
 **Example** Checking that venv was created.
