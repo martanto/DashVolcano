@@ -30,7 +30,7 @@ It is suggested to set up a python virtual environment, to make sure the depende
 
 > $ cd DashVolcano/DashVolcano.1.0.
 
-**Example** In the previous example, the new folder Volcanos/DashVolcano.1.0 was put inside the folder Documents, to go inside the folder DashVolcano.1.0, the command cd is used to go into Dashvolcano.1.0 through Documents, then DashVolcano:
+**Example** In the previous example, the folder DashVolcano/DashVolcano.1.0 was put inside the folder Documents, to go inside the folder DashVolcano.1.0, the command cd is used to go into Dashvolcano.1.0 through Documents, then DashVolcano:
 ![Screenshot](screenshots/ss2.png)
 
 Create the virtual environment: 
