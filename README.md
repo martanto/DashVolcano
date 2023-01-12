@@ -9,11 +9,11 @@ It creates a visual interface, to jointly display volcanic data from two major d
 Set-up and Directory structure
 --
 
-To install DashVolcano on your computer, the 3 folders and 2 excel files should be downloaded into a folder on your computer. It is preferrable to create a new folder (wherever you want this new folder to be), let us call it MyNewFolder, inside which you will place the downloaded folders DashVolcano.1.0., GeorocGVPmapping, GeorocDataset and the downloaded files GVP_Eruption_Results.xlsx, GVP_Volcano_List.xlsx.
+To install DashVolcano on your computer, the 3 folders and 2 excel files should be downloaded into a folder on your computer. It is preferrable to create a new folder (wherever you want this new folder to be), let us call it MyNewFolder, inside which you will place the downloaded folders DashVolcano.1.0, GeorocGVPmapping, GeorocDataset and the downloaded files GVP_Eruption_Results.xlsx, GVP_Volcano_List.xlsx.
 
 The resulting directory structure will thus be: 
 
-MyNewFolder, containing the 3 folders (DashVolcano.1.0., GeorocGVPmapping, GeorocDataset) and the 2 excel files (GVP_Eruption_Results.xlsx, GVP_Volcano_List.xlsx).
+MyNewFolder, containing the 3 folders (DashVolcano.1.0, GeorocGVPmapping, GeorocDataset) and the 2 excel files (GVP_Eruption_Results.xlsx, GVP_Volcano_List.xlsx).
 
 **Example** A new folder was created inside Documents, called Volcanos, inside which the 3 folders and the two files are found.
 ![Screenshot](screenshots/ss1.png)
@@ -26,15 +26,24 @@ See below for specific instructions for Mac OS and Linux, and for Windows 10.
 Set-up: Mac OS and Linux
 --
 
-It is suggested to set up a python virtual environment, to make sure the dependencies are consistent, and to avoid conflicting with possible other existing python set-ups. To do so, using the command line in a terminal window, go into the folder DashVolcano.1.0:
+It is suggested to set up a python virtual environment, to make sure the dependencies are consistent, and to avoid conflicting with possible other existing python set-ups. To do so, using the command line in a terminal window, go into the folder DashVolcano.1.0, using the command cd (change directory), the command works as follows, but the command itself may vary a bit depending on where you created MyNewFolder:
 
-> $ cd DashVolcano.1.0.
+> $ cd MyNewFolder/DashVolcano.1.0.
+
+**Example** In the previous example, the new folder Volcanos/DashVolcano.1.0 was put inside the folder Documents, to go inside the folder DashVolcano.1.0, the command cd is used recursively:
+![Screenshot](screenshots/ss2.png)
 
 and create the virtual environment: 
 
 > $ python3 -m venv venv
 
-If successful, you will see a new folder named venv inside the folder DashVolcano.1.0.
+If successful, you will see a new folder named venv inside the folder DashVolcano.1.0:
+
+**Example** Checking that venv was created using the terminal window.
+![Screenshot](screenshots/ss3.png)
+
+**Example** Checking that venv was created.
+![Screenshot](screenshots/ss4.png)
 
 Once the virtual python environment is created (this is done only once), it needs to be activated (this is needed every time the terminal window is opened again):
 
