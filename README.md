@@ -38,7 +38,7 @@ Create the virtual environment:
 > $ python3 -m venv venv
 
 **Example** From within the DashVolcano.1.0 folder, create the virtual environment.
-![Screenshot](screenshots/ss5.png)
+![Screenshot](screenshots/ss6.png)
 
 If successful, you will see a new folder named venv inside the folder DashVolcano.1.0:
 
