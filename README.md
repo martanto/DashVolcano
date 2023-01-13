@@ -31,22 +31,22 @@ It is suggested to set up a python virtual environment, to make sure the depende
 > $ cd DashVolcano/DashVolcano.1.0.
 
 **Example** In the previous example, the folder DashVolcano/DashVolcano.1.0 was put inside the folder Documents, to go inside the folder DashVolcano.1.0, the command cd is used to go into Dashvolcano.1.0 through Documents, then DashVolcano:
-![Screenshot](screenshots/ss2.png)
+<img src="screenshots/ss2.png" width="500">
 
 Create the virtual environment: 
 
 > $ python3 -m venv venv
 
 **Example** From within the DashVolcano.1.0 folder, create the virtual environment.
-![Screenshot](screenshots/ss6.png)
+<img src="screenshots/ss6.png" width="500">
 
 If successful, you will see a new folder named venv inside the folder DashVolcano.1.0:
 
 **Example** Checking that venv was created using the terminal window, using the command ls.
-![Screenshot](screenshots/ss3.png)
+<img src="screenshots/ss3.png" width="500">
 
 **Example** Checking that venv was created.
-![Screenshot](screenshots/ss4.png)
+<img src="screenshots/ss4.png" width="500">
 
 Once the virtual python environment is created (this is done only once), it needs to be activated (this is needed every time the terminal window is opened again):
 
