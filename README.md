@@ -46,6 +46,7 @@ If successful, you will see a new folder named venv inside the folder DashVolcan
 <img src="screenshots/ss3.png" width="500">
 
 **Example** Checking that venv was created.
+
 <img src="screenshots/ss4.png" width="500">
 
 Once the virtual python environment is created (this is done only once), it needs to be activated (this is needed every time the terminal window is opened again):
