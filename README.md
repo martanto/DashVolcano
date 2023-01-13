@@ -16,7 +16,7 @@ The resulting directory structure will thus be:
 DashVolcano, containing the 3 folders (DashVolcano.1.0, GeorocGVPmapping, GeorocDataset) and the 2 excel files (GVP_Eruption_Results.xlsx, GVP_Volcano_List.xlsx).
 
 **Example** The folder DashVolcano is placed inside Documents, inside which the 3 folders and the two files are found.
-![Screenshot](screenshots/ss1.png){width=100}
+<img src="screenshots/ss1.png" width="100">
 
 DashVolcano is written in python, you thus need python3 installed on your computer (this should be the case for Mac OS and Linux, instructions are provided for Windows 10 below). 
 DashVolcano was tested with: Python 3.7.4 on Ubuntu 20.04.4 LTS, and Python 3.8.3 on Mac OS Monterey version 12.5.1. 
