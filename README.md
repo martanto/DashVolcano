@@ -16,6 +16,7 @@ The resulting directory structure will thus be:
 DashVolcano, containing the 3 folders (DashVolcano.1.0, GeorocGVPmapping, GeorocDataset) and the 2 excel files (GVP_Eruption_Results.xlsx, GVP_Volcano_List.xlsx).
 
 **Example** The folder DashVolcano is placed inside Documents, inside which the 3 folders and the two files are found.
+
 <img src="screenshots/ss1.png" width="500">
 
 DashVolcano is written in python, you thus need python3 installed on your computer (this should be the case for Mac OS and Linux, instructions are provided for Windows 10 below). 
@@ -31,6 +32,7 @@ It is suggested to set up a python virtual environment, to make sure the depende
 > $ cd pathto/DashVolcano/DashVolcano.1.0.
 
 **Example** In the previous example, the folder DashVolcano/DashVolcano.1.0 was put inside the folder Documents, to go inside the folder DashVolcano.1.0, the command cd is used to go into Dashvolcano.1.0 through Documents, then DashVolcano:
+
 <img src="screenshots/ss2.png" width="500">
 
 Create the virtual environment: 
@@ -38,11 +40,13 @@ Create the virtual environment:
 > $ python3 -m venv venv
 
 **Example** From within the DashVolcano.1.0 folder, create the virtual environment.
+
 <img src="screenshots/ss6.png" width="500">
 
 If successful, you will see a new folder named venv inside the folder DashVolcano.1.0:
 
 **Example** Checking that venv was created using the terminal window, using the command ls.
+
 <img src="screenshots/ss3.png" width="500">
 
 **Example** Checking that venv was created.
