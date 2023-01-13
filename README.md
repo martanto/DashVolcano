@@ -49,9 +49,13 @@ If successful, you will see a new folder named venv inside the folder DashVolcan
 
 <img src="screenshots/ss4.png" width="500">
 
-Once the virtual python environment is created (this is done only once), it needs to be activated (this is needed every time the terminal window is opened again):
+Once the virtual python environment is created (this is done only once), it needs to be activated (this is needed every time the terminal window is opened again). This is the command, assuming you used the cd command to be inside the folder DashVolcano.1.0:
 
 > DashVolcano.1.0$ source venv/bin/activate
+
+**Example** Activating the virtual environment: 
+<img src="screenshots/ss5.png" width="500">
+
 
 You can tell whether the environment is activated by checking before your computer's name:
 
