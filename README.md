@@ -164,28 +164,11 @@ The folder GeorocDataset downloaded from github contains the GEOROC datasets, wh
 
 **Method 2.** It is the simplest method. Download directly the whole dataset from <a href = https://doi.org/10.21979/N9/BJENCK> here </a>. 
 
-**Example** This is what the GeorocDataset folder content should look like: 
+**Example** This is what the GeorocDataset folder content should look like, irrespective of the method used: 
 
 <img src="screenshots/ss8.png" width="500">
 
-
-Updated datasets can be downloaded directly from https://georoc.eu/georoc/new-start.asp, where they are grouped by tectonic settings.
-
-**Example (method 2).** In the folder GeorocDataset, there is a folder named Complex_Volcanic_Settings_comp. It currently contains a single example file, ETNA_SICILY.csv. On the left menu of  https://georoc.eu/georoc/new-start.asp, choose Locations, then Complex Volcanic Settings,then Download complete precompiled dataset. You will obtain 7 files: CENTRAL-NEW_YORK_KIMBERLITES.csv, OAXACA_MEXICO.csv, ETNA_SICILY.csv, POTIGUAR_BASIN.csv, FINGER_LAKES_FIELD_NEW_YORK.csv, USTICA_ISLAND_ITALY.csv, HYBLEAN_OR_IBLEAN_PLATEAU_SICILY.csv. Each of these files will have a prefix, that serves as an identifier, and also contains a date, e.g. 2022-06-1VOFM5_ETNA_SICILY.csv. There is no need to change the filename. The app will read the data by ignoring the prefix, and if there are several files, the most recent should be chosen.
-
-**Inclusions (for method 2).** The file containing inclusions data should also be downloaded from https://georoc.eu/georoc/new-start.asp, on the left menu, choose Inclusions. Note that the current file in the Inclusions_comp folder is not complete, it is an example file that should be replaced. 
-
-**End result.**
-Whether you choose the first method (to get data from 2021) or the second (to get the most recent data), the final folder structure will be: 
-<br>
-&nbsp;├ MyNewFolder <br>
- &nbsp; &nbsp; GVP_Volcano_List.xlsx <br>
- &nbsp; &nbsp; GVP_Eruption_Results.xlsx <br>
- &nbsp;    ├ DashVolcano.1.0. <br>
- &nbsp;    ├ GeorocGVPmapping <br> 
- &nbsp;    ├ GeorocDataset <br>
-<br>
-and the folder GeorocDataset itself will contains 13 folders (12 folders from GEOROC + 1 folder called ManualDataset) and 1 .csv file called GEOROCaroundGVP.csv. The file GEOROCaroundGVP.csv contains the GEOROC locations which are geographically relevant to GVP volcanoes. If the file is missing, the app will detect it, and recompute it (however this may take a while depending on the computational power of the computer used). This mechanism ensures that if new data is added, the file can be easily updated by simply removing it from its folder, after which the app will compute an updated version.
+The folder GeorocDataset contains 13 folders (12 folders from GEOROC + 1 folder called ManualDataset) and 1 .csv file called GEOROCaroundGVP.csv. The file GEOROCaroundGVP.csv contains the GEOROC locations which are geographically relevant to GVP volcanoes. If the file is missing, the app will detect it, and recompute it (however this may take a while depending on the computational power of the computer used). This mechanism ensures that if new data is added, the file can be easily updated by simply removing it from its folder, after which the app will compute an updated version.
 
 
 Running the app
@@ -225,8 +208,19 @@ To lauch the app, write the url
 
 in the browser of your choice.
 
-Adding your own data
+Updating the data
 --
+
+The instructions below are for more advanced usage of the app.
+
+** I would like to use more recent GEOROC datasets, is it possible? **
+Yes it is possible. 
+
+Updated datasets can be downloaded directly from https://georoc.eu/georoc/new-start.asp, where they are grouped by tectonic settings. 
+
+Here is an example:
+In the folder GeorocDataset, there is a folder named Complex_Volcanic_Settings_comp. It contains the file ETNA_SICILY.csv, which is, say, the file that you would like to update. On the left menu of  https://georoc.eu/georoc/new-start.asp, choose Locations, then Complex Volcanic Settings,then Download complete precompiled dataset. You will obtain 7 files: CENTRAL-NEW_YORK_KIMBERLITES.csv, OAXACA_MEXICO.csv, ETNA_SICILY.csv, POTIGUAR_BASIN.csv, FINGER_LAKES_FIELD_NEW_YORK.csv, USTICA_ISLAND_ITALY.csv, HYBLEAN_OR_IBLEAN_PLATEAU_SICILY.csv. Each of these files will have a prefix, that serves as an identifier, and also contains a date, e.g. 2022-06-1VOFM5_ETNA_SICILY.csv. Just put 2022-06-1VOFM5_ETNA_SICILY.csv inside Complex_Volcanic_Settings_comp. There is no need to change the filename (or you could remove the prefix if you prefer). The app will read the data by ignoring the prefix, and if there are several files, the most recent should be chosen.
+
 
 **Georoc - GVP mapping files**
 
