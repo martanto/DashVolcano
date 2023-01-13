@@ -159,10 +159,15 @@ This data was downloaded from https://volcano.si.edu/ in 2021. GVP data is regul
 
 There are two possibilities for the GEOROC dataset:
 
-**Method 1.** It is the simplest method. Download directly the whole dataset from <a href = https://doi.org/10.21979/N9/BJENCK> here </a>. 
+**Method 1.**
+The folder GeorocDataset downloaded from github contains the GEOROC datasets, where each folder is zipped (there are too many files to be stored as such on github), they need to be unzipped. 
 
-**Method 2.**
-The folder structure to store GEOROC datasets is provided, subfolders are zipped though, they need to be unzipped. 
+**Method 2.** It is the simplest method. Download directly the whole dataset from <a href = https://doi.org/10.21979/N9/BJENCK> here </a>. 
+
+**Example** This is what the GeorocDataset folder content should look like: 
+
+<img src="screenshots/ss9.png" width="500">
+
 
 Updated datasets can be downloaded directly from https://georoc.eu/georoc/new-start.asp, where they are grouped by tectonic settings.
 
