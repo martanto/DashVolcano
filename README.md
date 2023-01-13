@@ -54,12 +54,17 @@ Once the virtual python environment is created (this is done only once), it need
 > DashVolcano.1.0$ source venv/bin/activate
 
 **Example** Activating the virtual environment: 
+
 <img src="screenshots/ss5.png" width="500">
 
 
 You can tell whether the environment is activated by checking before your computer's name:
 
 > (venv) yourname@yourcomputername: 
+
+**Example** The (venv) prefix shows the virtual environment is activated: 
+
+<img src="screenshots/ss7.png" width="500">
 
 
 Set-up: Windows
