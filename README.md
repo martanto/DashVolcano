@@ -166,7 +166,7 @@ The folder GeorocDataset downloaded from github contains the GEOROC datasets, wh
 
 **Example** This is what the GeorocDataset folder content should look like: 
 
-<img src="screenshots/ss9.png" width="500">
+<img src="screenshots/ss8.png" width="500">
 
 
 Updated datasets can be downloaded directly from https://georoc.eu/georoc/new-start.asp, where they are grouped by tectonic settings.
