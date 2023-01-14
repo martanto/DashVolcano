@@ -27,7 +27,7 @@ See below for specific instructions for Mac OS and Linux, and for Windows 10.
 ## 1.1. Set-up: Mac OS and Linux
 
 
-It is suggested to set up a python virtual environment, to make sure the dependencies are consistent, and to avoid conflicting with possible other existing python set-ups. To do so,open a terminal window, and using the command line in the terminal window, go into the folder DashVolcano.1.0, using the command cd (change directory), the command works as follows, where pathto depends on where you created DashVolcano:
+It is suggested to set up a python virtual environment, to make sure the dependencies are consistent, and to avoid conflicting with possible other existing python set-ups. To do so, open a terminal window, and using the command line in the terminal window, go into the folder DashVolcano.1.0, using the command cd (change directory), the command works as follows, where pathto depends on where you created DashVolcano:
 
 > $ cd pathto/DashVolcano/DashVolcano.1.0.
 
