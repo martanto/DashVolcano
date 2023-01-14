@@ -230,7 +230,7 @@ In the folder GeorocDataset, there is a folder named Complex_Volcanic_Settings_c
 
 Yes, it is also possible to add more samples with their rock composition, if the desired samples are not (yet) present in the GEOROC dataset. They need to be in the same format as GEOROC format, and put in the ManualDataset folder. The mapping files need to be updated correspondingly (more on this in "Georoc - GVP mapping files" below), so does the file "GEOROCaroundGVP.csv" (more on this in "The file GEOROCaroundGVP file" below). Examples are found in the ManualDataset folder.
 
-** I would like to display GEOROC data for a volcano which is not in the GVP database, is it possible?**
+**I would like to display GEOROC data for a volcano which is not in the GVP database, is it possible?**
 
 Yes it is possible. You can do it by editing the mapping files manually, more in below in the "GEOROC - GVP mapping files" section.
 
@@ -257,7 +257,7 @@ Note there is no space before and after the GVP names, or the GEOROC names.
 These mapping files have been compiled algorithmically, with manual checks, but these checks are not exhaustive. There are more than 480 .csv files of data, the longitude and latitude ranges come with different levels of precision, and the location names may not always contain the volcano name itself. It is possible to simply append more GEOROC location names if a mapping file is not complete (and similarly to remove possibly inaccurate data).
 
 
-** The GEOROCaroundGVP file **
+**The GEOROCaroundGVP file**
 
 If the file is missing, the app will detect it, and recompute it (however this may take a while depending on the computational power of the computer used). This mechanism ensures that if new data is added, the file can be easily updated by simply removing it from its folder, after which the app will compute an updated version.
 
