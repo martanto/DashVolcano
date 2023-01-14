@@ -123,19 +123,17 @@ You can tell whether the environment is activated by checking before your user n
 
 # 2. Installing Packages
 
+The purpose of creating a virtual environment is so that you can then install specific versions of python packages, which will not interfere with other setups your computer may be using. Also python packages are often updated, and new versions may cause compatibility issues. Specific tested versions of packages will be installed in your virtual environment, to ensure the app runs smoothly.
 
-To start the app, make sure you are within the DashVolcano.1.0. folder, that your virtual environment is activated, and type the following command (you need the data to be available before you use the app for the first time, see below, Downloading the GVP and GEOROC datasets):
+To install a python package, still being within the DashVolcanon.1.0. folder with the virtual environment activated, the synthax is as follows for Mac OS, Linux and Windows:
 
-> python run.py
+> python -m pip install packagename==version
 
-This is the same command for Mac OS, Linux and Windows.
-Some packages are needed to run the app. If a package is missing, the app will not start, instead an error message will appear, giving the name of the package that is not found.
-
-To install a missing package, still being within the DashVolcanon.1.0. folder with the virtual environment activated, the synthax is as follows for Mac OS, Linux and Windows (this is an example for the package dash, version 2.0.0, please adjust the name depending on the package which is missing):
+For example, to install the package dash, version 2.0.0, type the following command:
 
 > python -m pip install dash==2.0.0
 
-The packages that are likely to be needed are:
+The following packages are likely to be needed, please install each of them using the same synthax (replace packagename==version by items in the list below, one by one):
 * dash==2.0.0
 * dash-bootstrap-components==1.0.0
 * dash-core-components==2.0.0
@@ -149,6 +147,9 @@ The packages that are likely to be needed are:
 * werkzeug==2.0.1
 
 If a message appears to suggest to upgrade pip, whether you do it or not should not impact the app.
+
+For the app to run, you need to have the GEOROC data ready, as explained next.
+
 
 # 3. Downloading the GVP and GEOROC datasets
 
@@ -175,8 +176,19 @@ The zipped file should be unzipped, this will give one txt file, called MANIFEST
 The folder GeorocDataset contains 13 folders (12 folders from GEOROC + 1 folder called ManualDataset) and 1 .csv file called GEOROCaroundGVP.csv. The file GEOROCaroundGVP.csv contains the GEOROC locations which are geographically relevant to GVP volcanoes. 
 
 
-# 4. Running the app
+# 4. Running the app for the first time
 
+So you have downloaded the DashVolcano repository, set-up your python virtual environment and you have the GEOROC dataset. 
+To start the app for the first time, make sure you are within the DashVolcano.1.0. folder, that your virtual environment is activated, and type the following command (you need the data to be available before you use the app for the first time, as explained above in, Downloading the GVP and GEOROC datasets):
+
+> python run.py
+
+This is the same command for Mac OS, Linux and Windows.
+
+All required packages that are needed to run the app should have been installed. If a package is still missing, the app will not start, instead an error message will appear, giving the name of the package that is not found. In this case, just install the missing package, whose name is given in the error message, using the same synthax as explained in "Installing Packages" above.
+
+
+# 5. Running the app
 
 Once the app is set up, only 2 steps are required. From inside the DashVolcano.1.0 folder, activate the virtual environment and launch the app.
 For Mac OS and Linux:
@@ -215,7 +227,7 @@ in the browser of your choice.
 # 5. Updating the data
 
 
-The instructions below are for more advanced usage of the app.
+The instructions below are for more advanced usages of the app.
 
 ** I would like to use more recent GEOROC datasets, is it possible? **
 Yes it is possible. 
@@ -223,7 +235,7 @@ Yes it is possible.
 Updated datasets can be downloaded directly from https://georoc.eu/georoc/new-start.asp, where they are grouped by tectonic settings. 
 
 Here is an example:
-In the folder GeorocDataset, there is a folder named Complex_Volcanic_Settings_comp. It contains the file ETNA_SICILY.csv, which is, say, the file that you would like to update. On the left menu of  https://georoc.eu/georoc/new-start.asp, choose Locations, then Complex Volcanic Settings,then Download complete precompiled dataset. You will obtain 7 files: CENTRAL-NEW_YORK_KIMBERLITES.csv, OAXACA_MEXICO.csv, ETNA_SICILY.csv, POTIGUAR_BASIN.csv, FINGER_LAKES_FIELD_NEW_YORK.csv, USTICA_ISLAND_ITALY.csv, HYBLEAN_OR_IBLEAN_PLATEAU_SICILY.csv. Each of these files will have a prefix, that serves as an identifier, and also contains a date, e.g. 2022-06-1VOFM5_ETNA_SICILY.csv. Just put 2022-06-1VOFM5_ETNA_SICILY.csv inside Complex_Volcanic_Settings_comp. The app will read the data by ignoring the prefix, and if there are several files, the most recent should be chosen. 
+In the folder GeorocDataset, there is a folder named Complex_Volcanic_Settings_comp. It contains the file ETNA_SICILY.csv, which is, say, the file that you would like to update. On the left menu of  https://georoc.eu/georoc/new-start.asp, choose Locations, then Complex Volcanic Settings,then Download complete precompiled dataset. You will obtain 7 files, whose names contain: CENTRAL-NEW_YORK_KIMBERLITES.csv, OAXACA_MEXICO.csv, ETNA_SICILY.csv, POTIGUAR_BASIN.csv, FINGER_LAKES_FIELD_NEW_YORK.csv, USTICA_ISLAND_ITALY.csv, HYBLEAN_OR_IBLEAN_PLATEAU_SICILY.csv. Each of these files will have a prefix, that serves as an identifier, and also contains a date, e.g. 2022-06-1VOFM5_ETNA_SICILY.csv. Just put 2022-06-1VOFM5_ETNA_SICILY.csv inside Complex_Volcanic_Settings_comp. The app will read the data by ignoring the prefix if there is only version of the file, if there are several files, the most recent should be chosen. 
 
 
 **I have my own datasets, I would like to add them, is it possible?**
@@ -232,11 +244,12 @@ Yes, it is also possible to add more samples with their rock composition, if the
 
 **I would like to display GEOROC data for a volcano which is not in the GVP database, is it possible?**
 
-Yes it is possible. You can do it by editing the mapping files manually, more in below in the "GEOROC - GVP mapping files" section.
+Yes it is possible. You can do it by editing the mapping files manually, more below in the "GEOROC - GVP mapping files" section.
 
 
 **Georoc - GVP mapping files**
 
+The mapping files are used by the app to link the GVP names with the GEOROC names. 
 The GeorocGVPMapping folder contains a .txt file for each .csv in the GeorocDataset folder. Each file is of the form
 
 >GVP;GEOROC
@@ -248,7 +261,7 @@ Etna;ETNA
 
 The first column contains names of GVP volcanoes, the second column contains GEOROC names. More precisely, the GVP name is the name that can be found in the column 'Volcano Name' of the GVP_Volcano_List.xlsx, the second column contains names that appear in the LOCATION or LOCATION column of a precompiled file downloaded from GEOROC. It has to be the same name as that found in between two / / for the LOCATION COLUMN, or the first name before the first comma (if any) in the LOCATION COMMENT.
 
-Here is a more complex from the file ANATOLIA-IRAN_BELT_-_CENOZOIC_QUATERNARY.txt.
+Here is a more complex example from the file ANATOLIA-IRAN_BELT_-_CENOZOIC_QUATERNARY.txt.
 
 >Samsari Volcanic Center;SAMSARI CALDERA,SAMSARI VOLCANIC CHAIN
 
@@ -256,8 +269,17 @@ Note there is no space before and after the GVP names, or the GEOROC names.
 
 These mapping files have been compiled algorithmically, with manual checks, but these checks are not exhaustive. There are more than 480 .csv files of data, the longitude and latitude ranges come with different levels of precision, and the location names may not always contain the volcano name itself. It is possible to simply append more GEOROC location names if a mapping file is not complete (and similarly to remove possibly inaccurate data).
 
+Say you would like to see the GEOROC data for Bayah Dome, which is not in the list of GVP volcanoes, but you have spotted samples for BAYAH DOME in the GEOROC file named SUNDAR_ARC.csv. Then you can just manually edit the file SUNDA_ARC.txt (it is important to edit the .txt file corresponding to the .csv file in which you saw the data), and add the line
+Bayah Dome;BAYAH DOME
+
+Of course no GVP data will be shown for this volcano, since the name "Baya Dome" is not present in the GVP list of volcanoes, but the GEOROC data will be shown.
+
+If you have added data manually in the folder ManualDataset, you need to have updated mapping files. For each new .csv file that you add inside the folder ManualDataset inside GeorocDataset, you need to create a corresponding .txt file inside the folder ManualDataset inside GeorocGVPmapping.
+
 
 **The GEOROCaroundGVP file**
+
+This file contains a list of GVP volcano names, and for each, it contains sample names from GEOROC that are relevant to the GVP volcanoes. It is used to display the map. If you have edited the Georoc-GVP mapping files, you may want to see an updated map.
 
 If the file is missing, the app will detect it, and recompute it (however this may take a while depending on the computational power of the computer used). This mechanism ensures that if new data is added, the file can be easily updated by simply removing it from its folder, after which the app will compute an updated version.
 
