@@ -9,7 +9,7 @@ It creates a visual interface, to jointly display volcanic data from two major d
 # 1. Set-up and Directory structure
 
 
-To install DashVolcano on your computer, the DashVolcano repository should be downloaded from github to your computer. It contains the folders DashVolcano.1.0, GeorocGVPmapping, GeorocDataset and the files GVP_Eruption_Results.xlsx, GVP_Volcano_List.xlsx. The folder DashVolcano could be placed inside Documents (we will provide an example for this case), or elsewhere (it can be placed anywhere you want, but some adjustement to the example will be needed). 
+To install DashVolcano on your computer, the DashVolcano repository should be downloaded from github to your computer. It contains the folders DashVolcano.1.0, GeorocGVPmapping, GeorocDataset and the files GVP_Eruption_Results.xlsx, GVP_Volcano_List.xlsx. The folder DashVolcano could be placed inside the folder Documents of your computer (we will provide an example for this case), or elsewhere (it can be placed anywhere you want, but some adjustement to the example may be needed). 
 
 The resulting directory structure will thus be: 
 
