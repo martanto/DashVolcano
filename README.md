@@ -222,14 +222,14 @@ To lauch the app, write the url
 
 > http://localhost:8050/
 
-in the browser of your choice.
+in the browser of your choice (e.g, chrome, firefox, safari).
 
 # 5. Updating the data
 
 
 The instructions below are for more advanced usages of the app.
 
-** I would like to use more recent GEOROC datasets, is it possible? **
+**I would like to use more recent GEOROC datasets, is it possible? **
 Yes it is possible. 
 
 Updated datasets can be downloaded directly from https://georoc.eu/georoc/new-start.asp, where they are grouped by tectonic settings. 
