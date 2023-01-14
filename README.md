@@ -6,8 +6,8 @@ It creates a visual interface, to jointly display volcanic data from two major d
 (1) the Geochemistry of Rocks of the Oceans and  Continents (GEOROC, https://georoc.eu/georoc/new-start.asp) of the Digital Geochemistry Infrastructure (DIGIS), and 
 (2) the Volcanoes of the World (VOTW) of the Smithsonian’s Global Volcanism Program (GVP, https://volcano.si.edu/). 
 
-1. Set-up and Directory structure
---
+# 1. Set-up and Directory structure
+
 
 To install DashVolcano on your computer, the DashVolcano repository should be downloaded from github to your computer. It contains the folders DashVolcano.1.0, GeorocGVPmapping, GeorocDataset and the files GVP_Eruption_Results.xlsx, GVP_Volcano_List.xlsx. The folder DashVolcano could be placed inside Documents (we will provide an example for this case), or elsewhere (it can be placed anywhere you want, but some adjustement to the example will be needed). 
 
@@ -24,8 +24,8 @@ DashVolcano was tested with: Python 3.7.4 on Ubuntu 20.04.4 LTS, and Python 3.8.
 See below for specific instructions for Mac OS and Linux, and for Windows 10.
 
 
-1.1. Set-up: Mac OS and Linux
---
+## 1.1. Set-up: Mac OS and Linux
+
 
 It is suggested to set up a python virtual environment, to make sure the dependencies are consistent, and to avoid conflicting with possible other existing python set-ups. To do so,open a terminal window, and using the command line in the terminal window, go into the folder DashVolcano.1.0, using the command cd (change directory), the command works as follows, where pathto depends on where you created DashVolcano:
 
@@ -71,8 +71,8 @@ You can tell whether the environment is activated by checking before your comput
 <img src="screenshots/ss7.png" width="500">
 
 
-1.2. Set-up: Windows
---
+## 1.2. Set-up: Windows
+
 
 This set-up was tested with Windows 10 and python 3.10.7. 
 **Install Python.** Open a command prompt (next to the windows start icon, search for "command prompt" and click on the command prompt icon). Type python. If python is installed, you will see something like that:
@@ -121,8 +121,8 @@ You can tell whether the environment is activated by checking before your user n
 
 > (venv) C:\Users\yourusername\DashVolcano.1.0.>
 
-2. Installing Packages
---
+# 2. Installing Packages
+
 
 To start the app, make sure you are within the DashVolcano.1.0. folder, that your virtual environment is activated, and type the following command (you need the data to be available before you use the app for the first time, see below, Downloading the GVP and GEOROC datasets):
 
@@ -150,8 +150,8 @@ The packages that are likely to be needed are:
 
 If a message appears to suggest to upgrade pip, whether you do it or not should not impact the app.
 
-3. Downloading the GVP and GEOROC datasets
---
+# 3. Downloading the GVP and GEOROC datasets
+
 
 The GVP data is provided into two excel files: GVP_Eruption_Results.xlsx, GVP_Volcano_List.xlsx. There is no need to download further data. 
 This data was downloaded from https://volcano.si.edu/ in 2021. GVP data is regularly updated. It is possible to download more recent datasets to update those provided, but the filenames and type (xlsx), as well as their location in the folder structure, have to remain the same. It is also advised to download both volcano and eruption files around the same period, otherwise volcano names may be present in one file and not in the other, which will cause errors when running the app. To download the most recent datasets form GVP, select all the “evidence” criteria from the volcano query search (https://volcano.si.edu/search_volcano.cfm) and select “confirmed eruption” category from the eruption query search (https://volcano.si.edu/search_eruption.cfm).
@@ -175,8 +175,8 @@ The zipped file should be unzipped, this will give one txt file, called MANIFEST
 The folder GeorocDataset contains 13 folders (12 folders from GEOROC + 1 folder called ManualDataset) and 1 .csv file called GEOROCaroundGVP.csv. The file GEOROCaroundGVP.csv contains the GEOROC locations which are geographically relevant to GVP volcanoes. 
 
 
-4. Running the app
---
+# 4. Running the app
+
 
 Once the app is set up, only 2 steps are required. From inside the DashVolcano.1.0 folder, activate the virtual environment and launch the app.
 For Mac OS and Linux:
@@ -212,8 +212,8 @@ To lauch the app, write the url
 
 in the browser of your choice.
 
-5. Updating the data
---
+# 5. Updating the data
+
 
 The instructions below are for more advanced usage of the app.
 
