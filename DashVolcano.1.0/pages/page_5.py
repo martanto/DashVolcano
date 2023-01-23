@@ -7,7 +7,7 @@
 # 2) add_chems: superimpose chemicals on chronogram
 #
 # Author: F. Oggier
-# Last update: Sep 1 2022
+# Last update: Jan 23 2023 (fixed bug on line 341)
 # ************************************************************************************* #
 
 import dash
@@ -338,7 +338,12 @@ def update_joint_chemchart(thisvolcano_name, thisdf, thisfig, thisdate):
             if thisdate == 'all':
                 all_dates_gvp = match_gvpdates(thisvolcano_name, 'forall', n)
             else:
-                all_dates_gvp = [[int(thisdate.split('-')[0]), match_gvpdates(thisvolcano_name, thisdate, n)]]
+                this_date_gvp = match_gvpdates(thisvolcano_name, thisdate, n)
+                # check if matches for this date (fixed on Jan 23 2023)
+                if not(this_date_gvp[0]) == 'not found':
+                    all_dates_gvp = [[int(thisdate.split('-')[0]), this_date_gvp]]
+                else:
+                    all_dates_gvp = []
             
         else:
             all_dates_gvp = []
