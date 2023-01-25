@@ -21,7 +21,7 @@
 # 13) create_georoc_around_gvp: creates a dataframe of GEOROC samples around GVP volcanoes
 #
 # Author: F. Oggier
-# Last update: Sep 1 2022
+# Last update: Jan 25 2023
 # ******************************************************************************* #
 
 from config_variables import *
@@ -263,7 +263,8 @@ def with_feonorm(thisdf):
     #  replaces missing oxides and LOI data with 0
     thisdf[oxides] = thisdf[oxides].fillna(0).astype(float)
     # when FEOT(WT%) is available, disregard FE2O3(WT%) and FEO(WT%)
-    oxides_nofe = [x for x in oxides if not (x in ['FE2O3(WT%)', 'FEO(WT%)', 'LOI(WT%)'])]
+    # list of oxides to be considered shortened (Jan 25 2023)
+    oxides_nofe =  ['SIO2(WT%)', 'TIO2(WT%)', 'AL2O3(WT%)', 'FE2O3(WT%)', 'FEO(WT%)', 'FEOT(WT%)', 'CAO(WT%)', 'MGO(WT%)', 'MNO(WT%)', 'K2O(WT%)', 'NA2O(WT%)', 'P2O5(WT%)']
     # When FEOT(WT%) is not available or empty, then FEOT(WT%) = FE2O3(WT%)/1.111 + FEO(WT%)   
     thisdf.loc[:, 'FEOT(WT%)'] = np.where(thisdf['FEOT(WT%)'] == 0, (thisdf['FE2O3(WT%)']/1.111)+thisdf['FEO(WT%)'],
                                    thisdf['FEOT(WT%)'])
