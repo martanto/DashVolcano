@@ -162,7 +162,7 @@ There are two possibilities for the GEOROC dataset:
 
 **Method 1.**
 The folder GeorocDataset downloaded from github contains the GEOROC datasets, as of June 2021, where each folder is zipped (there are too many files to be stored as such on github), they need to be unzipped. 
-For more recent data, please download them directly from the Geochemistry of Rocks of the Oceans and  Continents (GEOROC, https://georoc.eu/georoc/new-start.asp) of the Digital Geochemistry Infrastructure (DIGIS).
+For more recent precompiled files, please download them directly from the Geochemistry of Rocks of the Oceans and  Continents (GEOROC, https://georoc.eu/georoc/new-start.asp) of the Digital Geochemistry Infrastructure (DIGIS).
 
 **Method 2.** If you prefer to avoid unzipping the folders provided on github, it is possible to download directly the whole dataset from <a href = https://doi.org/10.21979/N9/BJENCK> here </a>, which will result in a single zipped file:
 
