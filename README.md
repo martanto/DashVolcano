@@ -161,7 +161,7 @@ This data was downloaded from https://volcano.si.edu/ in 2021. GVP data is regul
 There are two possibilities for the GEOROC dataset:
 
 **Method 1.**
-The folder GeorocDataset downloaded from github contains the GEOROC datasets, where each folder is zipped (there are too many files to be stored as such on github), they need to be unzipped. 
+The folder GeorocDataset downloaded from github contains the GEOROC datasets, as of June 2021, where each folder is zipped (there are too many files to be stored as such on github), they need to be unzipped. 
 
 **Method 2.** If you prefer to avoid unzipping the folders provided on github, it is possible to download directly the whole dataset from <a href = https://doi.org/10.21979/N9/BJENCK> here </a>, which will result in a single zipped file:
 
