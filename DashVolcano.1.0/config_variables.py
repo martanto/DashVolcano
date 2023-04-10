@@ -26,6 +26,7 @@
 #
 # Author: F. Oggier
 # Last update: Aug 30 2022
+#              April 10 2023
 # ************************************************************************************* #
 
 import pandas as pd
@@ -359,6 +360,9 @@ for fname in lst_arcs:
                         # if new file name
                         dict_volcano_file[new_key].append(fname + '.csv')
                     del dict_volcano_file[old_key]
+                # when both keys are the same (new clause)   
+                else:
+                    dict_volcano_file[new_key].append(fname + '.csv')      
             else:
                 # just add new key and new value
                 dict_volcano_file[nn] = [fname + '.csv']
