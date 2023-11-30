@@ -17,7 +17,7 @@
 # Last update: Sep 3 2022
 # **********************************************************************************#
 
-from config_variables import *
+from DashVolcano.config_variables import *
 import plotly.graph_objs as go
 
 

@@ -14,24 +14,11 @@ import dash
 from dash import dcc
 from dash import html
 import dash_bootstrap_components as dbc
-import plotly.graph_objs as go
-import plotly.express as px
-from plotly.subplots import make_subplots
-
-import pandas as pd
-import numpy as np
-from datetime import datetime
 
 # links to the main app
-from app import app
-
-# import variables common to all files
-# this includes loading the dataframes
-from config_variables import *
-
-# import functions to process GVP and GEOROC data
-from GVP_functions import *
-from Georoc_functions import *
+from DashVolcano.app import app
+from DashVolcano.GVP_functions import *
+from DashVolcano.Georoc_functions import *
 
 
 # *************************#

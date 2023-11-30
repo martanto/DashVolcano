@@ -24,11 +24,15 @@
 # Last update: Jan 25 2023
 # ******************************************************************************* #
 
-from config_variables import *
+from DashVolcano.config_variables import *
 import plotly.graph_objs as go
 from numpy.linalg import inv
 import re
 
+file_directory = os.path.dirname(os.path.realpath(__file__))
+top_directory = os.path.abspath(os.path.join(file_directory, os.pardir))
+GeorocDataset_directory = os.path.join(top_directory, 'GeorocDataset')
+GeorocGVPmapping_dir = os.path.join(top_directory, 'GeorocGVPmapping')
 
 def load_georoc(thisvolcano):
     """
@@ -69,8 +73,10 @@ def load_georoc(thisvolcano):
         # find the latest version of the file to use
         pathcsv = fix_pathname(pathcsv)
         print('GEOROC file used:', pathcsv)
+
+        GeorocDataset_csv = os.path.join(GeorocDataset_directory, '{}'.format(pathcsv))
     
-        dftmp = pd.read_csv("../GeorocDataset/%s" % pathcsv, low_memory=False, encoding='latin1')
+        dftmp = pd.read_csv(GeorocDataset_csv, low_memory=False, encoding='latin1')
         
         if 'Inclusions_comp' in pathcsv:
             # updates columns to have the same format as dataframes from other files
@@ -164,13 +170,13 @@ def fix_pathname(thisarc):
     Returns:
         file name with the right suffix (which contains the date of the latest download)
 
-    """   
+    """
+
+    folder, filename = thisarc.split('/')
+    tmp_dir = os.path.join(GeorocDataset_directory, '{}'.format(folder))
     
     if not('ManualDataset' in thisarc):
-        
-        folder, filename = thisarc.split('/')
-        # lists files in the folder
-        tmp = os.listdir('../GeorocDataset/%s' % folder)
+        tmp = os.listdir(tmp_dir)
         # now because of the new name, needs to find the file with the right suffix
         # in fact it is worse, since they changed the concatenation of words
         # so first replace hyphen and underscores with spaces, then split with respect to spaces
@@ -183,10 +189,10 @@ def fix_pathname(thisarc):
         if len(newname) > 1 and not(newname[0][0].isdigit()):
             # put the file name with no date at the end
             newname.insert(len(newname), newname.pop(0))
-        
-        thisarc = folder+'/'+newname[0]
 
-    return thisarc
+        return os.path.join(tmp_dir, newname[0])
+
+    return os.path.join(tmp_dir, filename)
     
 
 def fix_inclusion(thisdf):
@@ -887,13 +893,14 @@ def create_georoc_around_gvp():
  
     # list all file names, takes the folder names from the Mapping folder to have only folders
     lst_arcs = []
-    path_for_arcs = os.listdir('../GeorocGVPmapping')
-    
+    path_for_arcs = os.listdir(GeorocGVPmapping_dir)
+
     df_georoc = pd.DataFrame()
     
     for folder in path_for_arcs:
         # lists files in each folder, takes names from the Mapping folder in case different copies of the csv exist
-        tmp = os.listdir('../GeorocGVPmapping/%s' % folder)
+        tmp_dir = os.path.join(GeorocGVPmapping_dir, '{}'.format(folder))
+        tmp = os.listdir(tmp_dir)
         # adds the path to include directory 
         lst_arcs += ['%s' % folder + '/' + f[:-4] + '.csv' for f in tmp]
         
@@ -902,7 +909,8 @@ def create_georoc_around_gvp():
         newarc = fix_pathname(arc)
         
         # reads the file
-        dftmp = pd.read_csv('../GeorocDataset/%s' % newarc, low_memory=False, encoding='latin1')
+        dftmp_csv = os.path.join(GeorocDataset_directory, '{}'.format(newarc))
+        dftmp = pd.read_csv(dftmp_csv, low_memory=False, encoding='latin1')
         if not('Inclusions' in arc) and not('Manual' in arc):
             # keeps only volcanic rocks
             dfvol = dftmp[dftmp["ROCK TYPE"] == 'VOL']
@@ -957,6 +965,7 @@ def create_georoc_around_gvp():
     matchgroup['SAMPLE NAME'] = matchgroup['SAMPLE NAME'].apply(lambda x: " ".join(list(set(x))))
 
     # match_only_GR.to_csv('GEOROCaroundGVP.csv')
-    matchgroup.to_csv('../GeorocDataset/GEOROCaroundGVP.csv')
+    matchgroup_csv = os.path.join(GeorocDataset_directory, 'GEOROCaroundGVP.csv')
+    matchgroup.to_csv(matchgroup_csv)
 
     return matchgroup

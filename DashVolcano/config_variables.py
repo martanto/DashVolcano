@@ -36,6 +36,9 @@ import os
 
 import plotly.express as px
 
+file_directory = os.path.dirname(os.path.realpath(__file__))
+top_directory = os.path.abspath(os.path.join(file_directory, os.pardir))
+
 # ************************************************************************************#
 # constants: rocks
 # ************************************************************************************#
@@ -155,8 +158,9 @@ colorscale = {'none': 'blue', 'FEO(WT%)': '#FA8072', 'CAO(WT%)': '#E9967A',
 # ************************************************************************************#
 # loads GVP eruption data
 # ************************************************************************************#
+GVP_Eruption_Results = os.path.join(top_directory, 'GVP_Eruption_Results.xlsx')
 
-df = pd.read_excel("../GVP_Eruption_Results.xlsx", engine='openpyxl')
+df = pd.read_excel(GVP_Eruption_Results, engine='openpyxl')
 df.columns = list(df[0:1].values[0])
 df = df.drop(df.index[[0]])
 # removes rows where volcano name = Unknown source
@@ -172,8 +176,9 @@ lst_eruptions = list(df['Eruption Number'].values)
 # ************************************************************************************#
 # loads GVP volcano data
 # ************************************************************************************#
+GVP_Volcano_List = os.path.join(top_directory, 'GVP_Volcano_List.xlsx')
 
-gvpxl = pd.read_excel("../GVP_Volcano_List.xlsx", engine='openpyxl')
+gvpxl = pd.read_excel(GVP_Volcano_List, engine='openpyxl')
 gvpxl.columns = list(gvpxl[0:1].values[0])
 dfv = gvpxl.drop(gvpxl.index[[0]])
 
@@ -271,7 +276,9 @@ dfv['Primary Volcano Type'] = dfv['Primary Volcano Type'].replace(shapes, [shape
 # ***************************************************************************************#
 
 # events are in another sheet
-xl = pd.ExcelFile('../GVP_Eruption_Results.xlsx', engine='openpyxl')
+GVP_Eruption_Results = os.path.join(top_directory, 'GVP_Eruption_Results.xlsx')
+
+xl = pd.ExcelFile(GVP_Eruption_Results, engine='openpyxl')
 # extracts second sheet
 dfev = xl.parse("Events")
 dfev.columns = list(dfev[0:1].values[0])
@@ -304,13 +311,19 @@ for i in range(len(px.colors.sequential.OrRd)):
 
 # chooses subsets of data in terms of arcs, the data is automatically loaded from the mapping directory
 lst_arcs = []
-path_for_arcs = os.listdir('../GeorocGVPmapping')
+
+GeorocGVPmapping_dir = os.path.join(top_directory, 'GeorocGVPmapping')
+
+path_for_arcs = os.listdir(GeorocGVPmapping_dir)
 for folder in path_for_arcs:
     # lists files in each folder
-    tmp = os.listdir('../GeorocGVPmapping/%s' % folder)
+    GeorocGVPmapping_dir_tmp = os.path.join(GeorocGVPmapping_dir, '{}'.format(folder))
+
+    tmp = os.listdir(GeorocGVPmapping_dir_tmp)
     # adds the path to include directory if file is not empty
     lst_arcs += ['%s' % folder + '/' + f for f in tmp if
-                 os.stat('../GeorocGVPmapping/%s' % folder + '/' + f).st_size != 0]
+                 os.stat(os.path.join(GeorocGVPmapping_dir_tmp, '{}'.format(f))).st_size != 0]
+
 # removes the extension (.txt)
 lst_arcs = [f[:-4] for f in lst_arcs]
 
@@ -325,7 +338,9 @@ for fname in lst_arcs:
     fnameext = fname + '.txt'
         
     # open mapping file
-    nameconv = pd.read_csv('../GeorocGVPmapping/%s' % fnameext, delimiter=';')
+    nameconv_csv = os.path.join(GeorocGVPmapping_dir, '{}'.format(fnameext))
+    nameconv = pd.read_csv(nameconv_csv, delimiter=';')
+
     # Georoc names are from the column GEOROC
     for nn in nameconv['GEOROC']:
         

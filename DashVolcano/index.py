@@ -15,10 +15,8 @@ from dash import html
 from dash.dependencies import Input, Output
 import dash_bootstrap_components as dbc
 
-from app import app
-# content from the separate pages are inside the folder /pages
-from pages import page_2, page_4, page_5
-
+from DashVolcano.app import app
+from DashVolcano.pages import *
 
 app.layout = html.Div([
     dcc.Location(id='url', refresh=False),
@@ -57,5 +55,6 @@ def display_page(pathname):
         return page_5.layout    
     else:
         return page_4.layout
+
 
 server = app.server

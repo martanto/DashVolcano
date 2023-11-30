@@ -10,7 +10,7 @@
 # Last update: Aug 30 2022
 # ************************************************************************************* #
 
-import index
+from DashVolcano.index import app
 
 if __name__ == '__main__':
-    index.app.run_server(debug=True)
+    app.run_server(debug=True, host='0.0.0.0')
