@@ -57,3 +57,5 @@ def display_page(pathname):
         return page_5.layout    
     else:
         return page_4.layout
+
+server = app.server
