@@ -20,6 +20,17 @@ import dash
 import dash_bootstrap_components as dbc        
 
 # creates a class instance, specifies the style sheet
-app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP], suppress_callback_exceptions=True)
+app = dash.Dash(
+    __name__,
+    url_base_pathname='/dash-volcano/',
+    external_stylesheets=[dbc.themes.BOOTSTRAP],
+    suppress_callback_exceptions=True
+)
+
+app.config.update({
+    'routes_pathname_prefix': '/dash-volcano/',
+    'requests_pathname_prefix': '/dash-volcano/'
+})
+
 # sets up a title for the app, to be displayed in the browser bar
 app.title = "DashVolcano"

@@ -9,13 +9,7 @@
 # Last update: Aug 30 2022
 # **************************************************************************** #
 
-import dash
-from dash import dcc
-from dash import html
 from dash.dependencies import Input, Output
-import dash_bootstrap_components as dbc
-
-from DashVolcano.app import app
 from DashVolcano.pages import *
 
 app.layout = html.Div([
@@ -24,13 +18,13 @@ app.layout = html.Div([
     # since it is displayed before the page content.
     dbc.Row([
         dbc.Col([
-            dcc.Link('Map | ', href='/page-4', className='menu-link'),
+            dcc.Link('Map | ', href='page-4', className='menu-link'),
             ], width=2),
         dbc.Col([
-            dcc.Link('TAS and Harker Diagrams |', href='/page-2', className='menu-link'),
+            dcc.Link('TAS and Harker Diagrams |', href='page-2', className='menu-link'),
             ], width=2),
         dbc.Col([
-            dcc.Link('TAS Diagrams and Chronogram', href='/page-5', className='menu-link'),
+            dcc.Link('TAS Diagrams and Chronogram', href='page-5', className='menu-link'),
             ], width=2),    
     ]),
     # this loads the page content
@@ -49,9 +43,9 @@ app.layout = html.Div([
         )]
 )
 def display_page(pathname):
-    if pathname == '/page-2':
+    if 'page-2' in pathname:
         return page_2.layout
-    elif pathname == '/page-5':
+    elif 'page-5' in pathname:
         return page_5.layout    
     else:
         return page_4.layout
