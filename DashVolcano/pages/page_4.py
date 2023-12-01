@@ -26,6 +26,8 @@ from DashVolcano.Georoc_functions import *
 #
 # *************************#
 
+GEOROCaroundGVP_csv = os.path.join(GeorocDataset_directory, 'GEOROCaroundGVP.csv')
+
 layout = html.Div([
     # creates a layout with dbc
     dbc.Card(
@@ -215,9 +217,9 @@ def create_map_samples(db, thisvolcano):
 
     # loads GEOROC
     # lists files in the folder
-    if 'GEOROCaroundGVP.csv' in os.listdir('../GeorocDataset'):
+    if 'GEOROCaroundGVP.csv' in os.listdir(GeorocDataset_directory):
         # file exists, just reads it
-        dfgeo2 = pd.read_csv('../GeorocDataset/GEOROCaroundGVP.csv')
+        dfgeo2 = pd.read_csv(GEOROCaroundGVP_csv)
     else:
         # creates the file
         dfgeo2 = create_georoc_around_gvp()
@@ -388,7 +390,7 @@ def update_tas(fig, volcano_name, selectedpts):
         selectedpts = selectedpts['points']
 
         # loads GEOROC
-        dfgeogr = pd.read_csv('../GeorocDataset/GEOROCaroundGVP.csv')
+        dfgeogr = pd.read_csv(GEOROCaroundGVP_csv)
 
         dfgeogr['LATITUDE'] = (dfgeogr['LATITUDE MIN'] + dfgeogr['LATITUDE MAX']) / 2
         dfgeogr['LONGITUDE'] = (dfgeogr['LONGITUDE MIN'] + dfgeogr['LONGITUDE MAX']) / 2
@@ -427,7 +429,8 @@ def update_tas(fig, volcano_name, selectedpts):
             # changes name to the latest file version
             pathcsv = fix_pathname(pathcsv)
             # loads the file
-            dftmp = pd.read_csv("../GeorocDataset/%s" % pathcsv, low_memory=False, encoding='latin1')
+            dftmp_dir = os.path.join(GeorocDataset_directory, '{}'.format(pathcsv))
+            dftmp = pd.read_csv(dftmp_dir, low_memory=False, encoding='latin1')
             # inclusion file has a different format
             if 'Inclusions_comp' in pathcsv:
                 # updates columns to have the same format as dataframes from other files
