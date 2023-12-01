@@ -225,7 +225,111 @@ To lauch the app, write the url
 
 in the browser of your choice (e.g, chrome, firefox, safari).
 
-# 5. Updating the data
+## 5.1 Deploying
+To deploy DashVolcano as stand-alone web server, we need `uwsgi` module, which can be installed using:
+
+>  conda install -c conda-forge uwsgi
+
+After that we need to edit `wsgi.py` which located on this project diretory. For now, leave it as it is.  
+The content of the `wsgi.py`:
+
+```python
+from DashVolcano.index import server as application
+
+if __name__ == '__main__':
+    application.run(debug=True, host='0.0.0.0')
+```
+
+The alias of the `server` which is `application` is **mandatory**, and CANNOT be changed.  
+To check if `uwsgi` is working or not, we can run this command:  
+
+> uwsgi --socket 0.0.0.0:8050 --protocol=http -w wsgi
+
+The uWSGI configuration file is located at `wsgi.ini`. This file describes how to pass requests
+from the web. Nginx can use the uwsgi protocol natively, and it is faster and more secure than using HTTP.
+Create the file in the root directory of the repo using the nano editor:  
+
+> nano wsgui.ini
+
+The next thing that we need to do is creating system service. This file is needed to allow the 
+Ubuntu’s init system to automatically start uWSGI and run the dashboard when the server boots.  
+
+
+Use the following path to open a new file using nano named `wsgui.service`
+
+> sudo nano /etc/systemd/system/uwsgi.service
+
+Paste the following code that describes how the service should run. This file points to 
+the directories and virtual environment if one is being used.  
+
+Change `WorkingDirectory` with current directory where DashVolcano is installed. 
+You can check it using `pwd` command. On this example I put DashVolcano at `/var/www/DashVolcano`.
+
+```commandline
+[Unit]
+Description=uWSGI instance to serve Dash Volcano
+After=network.target
+
+[Service]
+User=magma
+Group=www-data
+WorkingDirectory=/var/www/DashVolcano
+ExecStart=/home/magma/miniconda3/envs/dash-volcano/bin/uwsgi --force-cwd /var/www/DashVolcano --ini wsgi.ini
+
+[Install]
+WantedBy = multi-user.target
+```  
+
+The **Unit** section describes the metadata and dependencies.
+The **Service** section describes the user and group under which the process run. 
+The **Install** section tells Systemd to boot the files when the multi-user system starts.  
+
+Things that need to change:
+1. `User`, need to be changed as current user of the system.
+2. `Group`, You don't have to change it, unless your Nginx group is different than this.
+3. Change `WorkingDirectory` with current directory where DashVolcano is installed.
+4. `ExecStart`, the first parameter `/home/magma/miniconda3/envs/dash-volcano/bin/uwsgi` is where
+the `uwsgi` installed on a python virtual environment. You have to change it with your virtual environment location.
+And the next one `/var/www/DashVolcano` is the same with `WorkingDirectory`. And the last parameter, is where the 
+`wsgi.ini` stored.  
+
+Now check that the service previously created works perfectly.
+
+> sudo systemctl restart wsgi.service  
+> sudo systemctl status wsgi.service
+
+### Configure Nginx
+
+> You can follow this tutorial to install Nginx  https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-22-04
+
+Now that the service is configured and will run when Ubuntu boots up, Nginx must be set to pass requests 
+that come from the web to the socket over the uwsgi protocol. We will create a new one.
+
+```commandline
+sudo nano /etc/nginx/sites-available/dash-volcano
+```  
+
+Paste it into the next configuration block, similar to the default, but updated for our new directory and domain name:   
+
+```
+server {
+        server_name YOUR_IP_ADDRESS;
+        
+        ....
+        
+        location / {        
+            include uwsgi_params; 
+            uwsgi_pass unix:/var/www/DashVolcano/wsgi.sock;             }
+        }
+}
+```  
+
+Restart your uWsgi and Nginx service:
+
+> sudo systemctl restart wsgi.service  
+> sudo systemctl restart nginx  
+
+# 6. Updating the data
 
 
 The instructions below are for more advanced usages of the app. You can run the app without looking at what comes next.
